@@ -1,0 +1,434 @@
+2017-11-03 00:48:01,242 - Spider www.newsinlevels.com started!
+2017-11-03 00:48:04,557 - downloading page success https://www.newsinlevels.com/page/1
+2017-11-03 00:48:06,622 - downloading page success https://www.newsinlevels.com/products/south-koreans-start-to-like-cheese-level-1/
+2017-11-03 00:48:06,694 - Adding annotator tokenize
+2017-11-03 00:48:06,695 - Adding annotator ssplit
+2017-11-03 00:48:07,230 - downloading page success https://www.newsinlevels.com/products/president-xi-jinping-level-1/
+2017-11-03 00:48:07,245 - Adding annotator tokenize
+2017-11-03 00:48:07,245 - Adding annotator ssplit
+2017-11-03 00:48:07,255 - downloading page success https://www.newsinlevels.com/products/accident-at-aberfan-level-1/
+2017-11-03 00:48:07,258 - downloading page success https://www.newsinlevels.com/products/activists-body-found-level-1/
+2017-11-03 00:48:07,273 - Adding annotator tokenize
+2017-11-03 00:48:07,273 - Adding annotator ssplit
+2017-11-03 00:48:07,276 - Adding annotator tokenize
+2017-11-03 00:48:07,276 - Adding annotator ssplit
+2017-11-03 00:48:07,277 - downloading page success https://www.newsinlevels.com/products/rare-rhino-is-born-level-1/
+2017-11-03 00:48:07,296 - Adding annotator tokenize
+2017-11-03 00:48:07,296 - Adding annotator ssplit
+2017-11-03 00:48:08,727 - downloading page success https://www.newsinlevels.com/products/awesome-video-of-the-sun-level-1/
+2017-11-03 00:48:08,739 - Adding annotator tokenize
+2017-11-03 00:48:08,739 - Adding annotator ssplit
+2017-11-03 00:48:09,137 - downloading page success https://www.newsinlevels.com/products/risks-of-technology-level-1/
+2017-11-03 00:48:09,140 - downloading page success https://www.newsinlevels.com/products/grammar-for-speaking-level-1/
+2017-11-03 00:48:09,141 - downloading page success https://www.newsinlevels.com/products/train-hits-soldiers-level-1/
+2017-11-03 00:48:09,142 - downloading page success https://www.newsinlevels.com/products/factory-in-indonesia-level-1/
+2017-11-03 00:48:09,156 - Adding annotator tokenize
+2017-11-03 00:48:09,156 - Adding annotator ssplit
+2017-11-03 00:48:09,164 - Adding annotator tokenize
+2017-11-03 00:48:09,165 - Adding annotator ssplit
+2017-11-03 00:48:09,169 - Adding annotator tokenize
+2017-11-03 00:48:09,170 - Adding annotator ssplit
+2017-11-03 00:48:09,173 - Adding annotator tokenize
+2017-11-03 00:48:09,173 - Adding annotator ssplit
+2017-11-03 00:48:10,506 - downloading page success https://www.newsinlevels.com/products/finding-water-on-other-planets-level-1/
+2017-11-03 00:48:10,538 - Adding annotator tokenize
+2017-11-03 00:48:10,539 - Adding annotator ssplit
+2017-11-03 00:48:10,675 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Thu Nov 02 15:03:32 CST 2017]; root of context hierarchy
+2017-11-03 00:48:10,728 - Unregistering JMX-exposed beans on shutdown
+2017-11-03 00:48:10,737 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-11-03 00:48:10,775 - downloading page success https://www.newsinlevels.com/products/pets-in-costumes-level-1/
+2017-11-03 00:48:10,792 - Adding annotator tokenize
+2017-11-03 00:48:10,792 - Adding annotator ssplit
+2017-11-03 00:56:33,752 - Starting ElearningApplication on guojiede-MBP with PID 4525 (/Users/guojie/GitHub/elearning/target/classes started by guojie in /Users/guojie/GitHub/elearning)
+2017-11-03 00:56:33,762 - No active profile set, falling back to default profiles: default
+2017-11-03 00:56:33,952 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 00:56:33 CST 2017]; root of context hierarchy
+2017-11-03 00:56:34,418 - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-03 00:56:39,795 - Tomcat initialized with port(s): 8080 (http)
+2017-11-03 00:56:39,825 - Starting service [Tomcat]
+2017-11-03 00:56:39,827 - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-11-03 00:56:40,137 - Initializing Spring embedded WebApplicationContext
+2017-11-03 00:56:40,141 - Root WebApplicationContext: initialization completed in 6189 ms
+2017-11-03 00:56:40,706 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-03 00:56:40,728 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-03 00:56:40,728 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-03 00:56:40,729 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-03 00:56:40,729 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-03 00:56:42,416 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-03 00:56:42,453 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-03 00:56:42,683 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-03 00:56:42,685 - HHH000206: hibernate.properties not found
+2017-11-03 00:56:42,687 - HHH000021: Bytecode provider name : javassist
+2017-11-03 00:56:42,837 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-03 00:56:43,250 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-03 00:56:44,385 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-03 00:56:46,100 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 00:56:33 CST 2017]; root of context hierarchy
+2017-11-03 00:56:46,385 - Mapped "{[/exam/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.insert(com.ican.elearning.form.ExamForm)
+2017-11-03 00:56:46,398 - Mapped "{[/exam/autoGenerateExam],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.autoGenerateExam(java.lang.String)
+2017-11-03 00:56:46,403 - Mapped "{[/paragraph/delete],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.delete(java.lang.Integer)
+2017-11-03 00:56:46,407 - Mapped "{[/paragraph/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Paragraph>> com.ican.elearning.controller.ParagraphController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 00:56:46,408 - Mapped "{[/paragraph/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.insert(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-11-03 00:56:46,412 - Mapped "{[/question/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.insert(com.ican.elearning.form.QuestionForm,org.springframework.validation.BindingResult)
+2017-11-03 00:56:46,413 - Mapped "{[/question/autoGenerated],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.autoGenerated(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-11-03 00:56:46,414 - Mapped "{[/question/autoGenerate],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.autoGenerated2()
+2017-11-03 00:56:46,418 - Mapped "{[/file/delete],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.delete(java.lang.Integer)
+2017-11-03 00:56:46,419 - Mapped "{[/file/files/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.Resource> com.ican.elearning.controller.UploadController.getFile(java.lang.String)
+2017-11-03 00:56:46,428 - Mapped "{[/file/],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.handleFileUpload(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2017-11-03 00:56:46,430 - Mapped "{[/file/getfiles],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.getListFile(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 00:56:46,438 - Mapped "{[/auth/register],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.register(com.ican.elearning.form.UserForm,org.springframework.validation.BindingResult)
+2017-11-03 00:56:46,444 - Mapped "{[/auth/login],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.login(java.lang.String,java.lang.String)
+2017-11-03 00:56:46,453 - Mapped "{[/word/delete],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.delete(java.lang.Integer)
+2017-11-03 00:56:46,479 - Mapped "{[/word/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Word>> com.ican.elearning.controller.WordController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 00:56:46,486 - Mapped "{[/word/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.insert(com.ican.elearning.form.WordForm,org.springframework.validation.BindingResult)
+2017-11-03 00:56:46,500 - Mapped "{[/word/pie],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.Map<java.lang.String, java.lang.Integer>> com.ican.elearning.controller.WordController.pie()
+2017-11-03 00:56:46,513 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-03 00:56:46,514 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-03 00:56:46,773 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 00:56:46,774 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 00:56:46,904 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 00:56:46,954 - Adding welcome page: class path resource [static/index.html]
+2017-11-03 00:56:47,747 - Registering beans for JMX exposure on startup
+2017-11-03 00:56:47,782 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-11-03 00:56:47,815 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-03 00:56:47,844 - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-03 00:56:47,908 - Using a shared selector for servlet write/read
+2017-11-03 00:56:47,979 - Tomcat started on port(s): 8080 (http)
+2017-11-03 00:56:47,988 - Started ElearningApplication in 15.404 seconds (JVM running for 17.805)
+2017-11-03 01:05:01,604 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-03 01:05:01,606 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-03 01:05:01,655 - FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
+2017-11-03 01:05:01,772 - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-03 01:05:21,100 - Adding annotator tokenize
+2017-11-03 01:05:21,113 - No tokenizer type provided. Defaulting to PTBTokenizer.
+2017-11-03 01:05:21,124 - Adding annotator ssplit
+2017-11-03 01:05:21,318 - Adding annotator tokenize
+2017-11-03 01:05:21,319 - Adding annotator ssplit
+2017-11-03 01:05:21,319 - Adding annotator pos
+2017-11-03 01:05:23,625 - Loading POS tagger from edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger ... done [2.3 sec].
+2017-11-03 01:05:23,626 - Adding annotator lemma
+2017-11-03 01:50:12,860 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 00:56:33 CST 2017]; root of context hierarchy
+2017-11-03 01:50:12,880 - Unregistering JMX-exposed beans on shutdown
+2017-11-03 01:50:12,884 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-11-03 15:56:25,060 - Starting ElearningApplication on guojiede-MBP with PID 5112 (/Users/guojie/GitHub/elearning/target/classes started by guojie in /Users/guojie/GitHub/elearning)
+2017-11-03 15:56:25,064 - No active profile set, falling back to default profiles: default
+2017-11-03 15:56:25,179 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 15:56:25 CST 2017]; root of context hierarchy
+2017-11-03 15:56:25,291 - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-03 15:56:27,525 - Tomcat initialized with port(s): 8080 (http)
+2017-11-03 15:56:27,540 - Starting service [Tomcat]
+2017-11-03 15:56:27,542 - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-11-03 15:56:27,652 - Initializing Spring embedded WebApplicationContext
+2017-11-03 15:56:27,652 - Root WebApplicationContext: initialization completed in 2473 ms
+2017-11-03 15:56:27,793 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-03 15:56:27,798 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-03 15:56:27,799 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-03 15:56:27,799 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-03 15:56:27,799 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-03 15:56:28,437 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-03 15:56:28,449 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-03 15:56:28,560 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-03 15:56:28,562 - HHH000206: hibernate.properties not found
+2017-11-03 15:56:28,563 - HHH000021: Bytecode provider name : javassist
+2017-11-03 15:56:28,614 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-03 15:56:28,760 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-03 15:56:29,390 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-03 15:56:30,146 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 15:56:25 CST 2017]; root of context hierarchy
+2017-11-03 15:56:30,222 - Mapped "{[/exam/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.insert(com.ican.elearning.form.ExamForm)
+2017-11-03 15:56:30,224 - Mapped "{[/exam/autoGenerateExam],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.autoGenerateExam(java.lang.String)
+2017-11-03 15:56:30,225 - Mapped "{[/paragraph/delete],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.delete(java.lang.Integer)
+2017-11-03 15:56:30,226 - Mapped "{[/paragraph/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Paragraph>> com.ican.elearning.controller.ParagraphController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 15:56:30,227 - Mapped "{[/paragraph/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.insert(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-11-03 15:56:30,228 - Mapped "{[/question/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Word>> com.ican.elearning.controller.QuestionController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 15:56:30,229 - Mapped "{[/question/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.insert(com.ican.elearning.form.QuestionForm,org.springframework.validation.BindingResult)
+2017-11-03 15:56:30,230 - Mapped "{[/question/autoGenerated],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.autoGenerated(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-11-03 15:56:30,233 - Mapped "{[/file/delete],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.delete(java.lang.Integer)
+2017-11-03 15:56:30,233 - Mapped "{[/file/files/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.Resource> com.ican.elearning.controller.UploadController.getFile(java.lang.String)
+2017-11-03 15:56:30,234 - Mapped "{[/file/],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.handleFileUpload(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2017-11-03 15:56:30,234 - Mapped "{[/file/getfiles],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.getListFile(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 15:56:30,236 - Mapped "{[/auth/register],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.register(com.ican.elearning.form.UserForm,org.springframework.validation.BindingResult)
+2017-11-03 15:56:30,236 - Mapped "{[/auth/login],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.login(java.lang.String,java.lang.String)
+2017-11-03 15:56:30,238 - Mapped "{[/word/delete],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.delete(java.lang.Integer)
+2017-11-03 15:56:30,239 - Mapped "{[/word/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Word>> com.ican.elearning.controller.WordController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 15:56:30,241 - Mapped "{[/word/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.insert(com.ican.elearning.form.WordForm,org.springframework.validation.BindingResult)
+2017-11-03 15:56:30,242 - Mapped "{[/word/pie],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.Map<java.lang.String, java.lang.Integer>> com.ican.elearning.controller.WordController.pie()
+2017-11-03 15:56:30,244 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-03 15:56:30,245 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-03 15:56:30,278 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 15:56:30,278 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 15:56:30,326 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 15:56:30,354 - Adding welcome page: class path resource [static/index.html]
+2017-11-03 15:56:30,677 - Registering beans for JMX exposure on startup
+2017-11-03 15:56:30,694 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-11-03 15:56:30,705 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-03 15:56:30,715 - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-03 15:56:30,743 - Using a shared selector for servlet write/read
+2017-11-03 15:56:30,761 - Tomcat started on port(s): 8080 (http)
+2017-11-03 15:56:30,767 - Started ElearningApplication in 7.017 seconds (JVM running for 8.145)
+2017-11-03 15:57:18,780 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 15:56:25 CST 2017]; root of context hierarchy
+2017-11-03 15:57:18,785 - Unregistering JMX-exposed beans on shutdown
+2017-11-03 15:57:18,792 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-11-03 16:04:27,328 - Starting ElearningApplication on guojiede-MBP with PID 5123 (/Users/guojie/GitHub/elearning/target/classes started by guojie in /Users/guojie/GitHub/elearning)
+2017-11-03 16:04:27,333 - No active profile set, falling back to default profiles: default
+2017-11-03 16:04:27,451 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 16:04:27 CST 2017]; root of context hierarchy
+2017-11-03 16:04:27,591 - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-03 16:04:30,713 - Tomcat initialized with port(s): 8080 (http)
+2017-11-03 16:04:30,730 - Starting service [Tomcat]
+2017-11-03 16:04:30,732 - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-11-03 16:04:30,868 - Initializing Spring embedded WebApplicationContext
+2017-11-03 16:04:30,868 - Root WebApplicationContext: initialization completed in 3417 ms
+2017-11-03 16:04:31,071 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-03 16:04:31,076 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-03 16:04:31,077 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-03 16:04:31,077 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-03 16:04:31,077 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-03 16:04:31,758 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-03 16:04:31,771 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-03 16:04:31,858 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-03 16:04:31,860 - HHH000206: hibernate.properties not found
+2017-11-03 16:04:31,861 - HHH000021: Bytecode provider name : javassist
+2017-11-03 16:04:31,920 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-03 16:04:32,162 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-03 16:04:33,110 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-03 16:04:34,350 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 16:04:27 CST 2017]; root of context hierarchy
+2017-11-03 16:04:34,436 - Mapped "{[/exam/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.insert(com.ican.elearning.form.ExamForm)
+2017-11-03 16:04:34,438 - Mapped "{[/exam/autoGenerateExam],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.autoGenerateExam(java.lang.String)
+2017-11-03 16:04:34,440 - Mapped "{[/paragraph/delete],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.delete(java.lang.Integer)
+2017-11-03 16:04:34,440 - Mapped "{[/paragraph/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Paragraph>> com.ican.elearning.controller.ParagraphController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 16:04:34,441 - Mapped "{[/paragraph/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.insert(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-11-03 16:04:34,442 - Mapped "{[/question/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Word>> com.ican.elearning.controller.QuestionController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 16:04:34,443 - Mapped "{[/question/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.insert(com.ican.elearning.form.QuestionForm,org.springframework.validation.BindingResult)
+2017-11-03 16:04:34,443 - Mapped "{[/question/autoGenerated],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.autoGenerated(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-11-03 16:04:34,446 - Mapped "{[/file/delete],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.delete(java.lang.Integer)
+2017-11-03 16:04:34,447 - Mapped "{[/file/files/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.Resource> com.ican.elearning.controller.UploadController.getFile(java.lang.String)
+2017-11-03 16:04:34,448 - Mapped "{[/file/],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.handleFileUpload(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2017-11-03 16:04:34,449 - Mapped "{[/file/getfiles],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.getListFile(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 16:04:34,451 - Mapped "{[/auth/register],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.register(com.ican.elearning.form.UserForm,org.springframework.validation.BindingResult)
+2017-11-03 16:04:34,452 - Mapped "{[/auth/login],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.login(java.lang.String,java.lang.String)
+2017-11-03 16:04:34,456 - Mapped "{[/word/delete],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.delete(java.lang.Integer)
+2017-11-03 16:04:34,456 - Mapped "{[/word/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Word>> com.ican.elearning.controller.WordController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 16:04:34,458 - Mapped "{[/word/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.insert(com.ican.elearning.form.WordForm,org.springframework.validation.BindingResult)
+2017-11-03 16:04:34,459 - Mapped "{[/word/pie],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.Map<java.lang.String, java.lang.Integer>> com.ican.elearning.controller.WordController.pie()
+2017-11-03 16:04:34,461 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-03 16:04:34,462 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-03 16:04:34,504 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 16:04:34,504 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 16:04:34,586 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 16:04:34,618 - Adding welcome page: class path resource [static/index.html]
+2017-11-03 16:04:34,992 - Registering beans for JMX exposure on startup
+2017-11-03 16:04:35,013 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-11-03 16:04:35,026 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-03 16:04:35,042 - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-03 16:04:35,067 - Using a shared selector for servlet write/read
+2017-11-03 16:04:35,082 - Tomcat started on port(s): 8080 (http)
+2017-11-03 16:04:35,088 - Started ElearningApplication in 8.704 seconds (JVM running for 9.965)
+2017-11-03 16:07:46,376 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-03 16:07:46,377 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-03 16:07:46,398 - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-11-03 16:07:46,453 - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-03 16:11:41,838 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 16:04:27 CST 2017]; root of context hierarchy
+2017-11-03 16:11:41,841 - Unregistering JMX-exposed beans on shutdown
+2017-11-03 16:11:41,845 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-11-03 16:11:49,691 - Starting ElearningApplication on guojiede-MBP with PID 5136 (/Users/guojie/GitHub/elearning/target/classes started by guojie in /Users/guojie/GitHub/elearning)
+2017-11-03 16:11:49,699 - No active profile set, falling back to default profiles: default
+2017-11-03 16:11:49,887 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 16:11:49 CST 2017]; root of context hierarchy
+2017-11-03 16:11:49,981 - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-03 16:11:54,144 - Tomcat initialized with port(s): 8080 (http)
+2017-11-03 16:11:54,178 - Starting service [Tomcat]
+2017-11-03 16:11:54,178 - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-11-03 16:11:54,345 - Initializing Spring embedded WebApplicationContext
+2017-11-03 16:11:54,353 - Root WebApplicationContext: initialization completed in 4465 ms
+2017-11-03 16:11:54,551 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-03 16:11:54,556 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-03 16:11:54,557 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-03 16:11:54,558 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-03 16:11:54,558 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-03 16:11:55,339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-03 16:11:55,354 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-03 16:11:55,456 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-03 16:11:55,458 - HHH000206: hibernate.properties not found
+2017-11-03 16:11:55,459 - HHH000021: Bytecode provider name : javassist
+2017-11-03 16:11:55,508 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-03 16:11:55,646 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-03 16:11:56,407 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-03 16:11:57,475 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 16:11:49 CST 2017]; root of context hierarchy
+2017-11-03 16:11:57,638 - Mapped "{[/exam/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.insert(com.ican.elearning.form.ExamForm)
+2017-11-03 16:11:57,640 - Mapped "{[/exam/autoGenerateExam],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.autoGenerateExam(java.lang.String)
+2017-11-03 16:11:57,642 - Mapped "{[/paragraph/delete],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.delete(java.lang.Integer)
+2017-11-03 16:11:57,643 - Mapped "{[/paragraph/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Paragraph>> com.ican.elearning.controller.ParagraphController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 16:11:57,643 - Mapped "{[/paragraph/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.insert(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-11-03 16:11:57,647 - Mapped "{[/question/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Word>> com.ican.elearning.controller.QuestionController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 16:11:57,648 - Mapped "{[/question/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.insert(com.ican.elearning.form.QuestionForm,org.springframework.validation.BindingResult)
+2017-11-03 16:11:57,648 - Mapped "{[/question/autoGenerated],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.autoGenerated(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-11-03 16:11:57,652 - Mapped "{[/file/delete],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.delete(java.lang.Integer)
+2017-11-03 16:11:57,653 - Mapped "{[/file/files/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.Resource> com.ican.elearning.controller.UploadController.getFile(java.lang.String)
+2017-11-03 16:11:57,654 - Mapped "{[/file/],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.handleFileUpload(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2017-11-03 16:11:57,654 - Mapped "{[/file/getfiles],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.getListFile(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 16:11:57,656 - Mapped "{[/auth/register],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.register(com.ican.elearning.form.UserForm,org.springframework.validation.BindingResult)
+2017-11-03 16:11:57,656 - Mapped "{[/auth/login],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.login(java.lang.String,java.lang.String)
+2017-11-03 16:11:57,659 - Mapped "{[/word/delete],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.delete(java.lang.Integer)
+2017-11-03 16:11:57,660 - Mapped "{[/word/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Word>> com.ican.elearning.controller.WordController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 16:11:57,669 - Mapped "{[/word/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.insert(com.ican.elearning.form.WordForm,org.springframework.validation.BindingResult)
+2017-11-03 16:11:57,670 - Mapped "{[/word/pie],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.Map<java.lang.String, java.lang.Integer>> com.ican.elearning.controller.WordController.pie()
+2017-11-03 16:11:57,673 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-03 16:11:57,674 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-03 16:11:57,720 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 16:11:57,720 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 16:11:57,822 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 16:11:57,854 - Adding welcome page: class path resource [static/index.html]
+2017-11-03 16:11:58,295 - Registering beans for JMX exposure on startup
+2017-11-03 16:11:58,313 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-11-03 16:11:58,323 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-03 16:11:58,334 - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-03 16:11:58,393 - Using a shared selector for servlet write/read
+2017-11-03 16:11:58,420 - Tomcat started on port(s): 8080 (http)
+2017-11-03 16:11:58,430 - Started ElearningApplication in 9.608 seconds (JVM running for 10.817)
+2017-11-03 16:13:46,926 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-03 16:13:46,927 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-03 16:13:46,947 - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-11-03 16:14:21,408 - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-03 21:09:30,747 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 16:11:49 CST 2017]; root of context hierarchy
+2017-11-03 21:09:30,837 - Unregistering JMX-exposed beans on shutdown
+2017-11-03 21:09:30,842 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-11-03 21:09:38,744 - Starting ElearningApplication on guojiede-MBP with PID 5661 (/Users/guojie/GitHub/elearning/target/classes started by guojie in /Users/guojie/GitHub/elearning)
+2017-11-03 21:09:38,752 - No active profile set, falling back to default profiles: default
+2017-11-03 21:09:38,898 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 21:09:38 CST 2017]; root of context hierarchy
+2017-11-03 21:09:39,038 - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-03 21:09:41,765 - Tomcat initialized with port(s): 8080 (http)
+2017-11-03 21:09:41,783 - Starting service [Tomcat]
+2017-11-03 21:09:41,784 - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-11-03 21:09:41,871 - Initializing Spring embedded WebApplicationContext
+2017-11-03 21:09:41,871 - Root WebApplicationContext: initialization completed in 2973 ms
+2017-11-03 21:09:42,018 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-03 21:09:42,023 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-03 21:09:42,024 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-03 21:09:42,024 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-03 21:09:42,024 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-03 21:09:42,652 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-03 21:09:42,664 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-03 21:09:42,751 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-03 21:09:42,752 - HHH000206: hibernate.properties not found
+2017-11-03 21:09:42,753 - HHH000021: Bytecode provider name : javassist
+2017-11-03 21:09:42,793 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-03 21:09:42,914 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-03 21:09:43,542 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-03 21:09:44,344 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 21:09:38 CST 2017]; root of context hierarchy
+2017-11-03 21:09:44,423 - Mapped "{[/exam/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.insert(com.ican.elearning.form.ExamForm)
+2017-11-03 21:09:44,425 - Mapped "{[/exam/autoGenerateExam],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.autoGenerateExam(java.lang.String)
+2017-11-03 21:09:44,426 - Mapped "{[/paragraph/delete],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.delete(java.lang.Integer)
+2017-11-03 21:09:44,427 - Mapped "{[/paragraph/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Paragraph>> com.ican.elearning.controller.ParagraphController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 21:09:44,427 - Mapped "{[/paragraph/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.insert(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-11-03 21:09:44,429 - Mapped "{[/question/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Question>> com.ican.elearning.controller.QuestionController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 21:09:44,430 - Mapped "{[/question/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.insert(com.ican.elearning.form.QuestionForm,org.springframework.validation.BindingResult)
+2017-11-03 21:09:44,430 - Mapped "{[/question/findOne],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.QuestionDTO> com.ican.elearning.controller.QuestionController.findOne(java.lang.Integer)
+2017-11-03 21:09:44,431 - Mapped "{[/question/autoGenerated],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.autoGenerated(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-11-03 21:09:44,433 - Mapped "{[/file/delete],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.delete(java.lang.Integer)
+2017-11-03 21:09:44,434 - Mapped "{[/file/files/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.Resource> com.ican.elearning.controller.UploadController.getFile(java.lang.String)
+2017-11-03 21:09:44,434 - Mapped "{[/file/],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.handleFileUpload(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2017-11-03 21:09:44,435 - Mapped "{[/file/getfiles],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.getListFile(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 21:09:44,436 - Mapped "{[/auth/register],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.register(com.ican.elearning.form.UserForm,org.springframework.validation.BindingResult)
+2017-11-03 21:09:44,437 - Mapped "{[/auth/login],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.login(java.lang.String,java.lang.String)
+2017-11-03 21:09:44,439 - Mapped "{[/word/delete],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.delete(java.lang.Integer)
+2017-11-03 21:09:44,441 - Mapped "{[/word/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Word>> com.ican.elearning.controller.WordController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 21:09:44,442 - Mapped "{[/word/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.insert(com.ican.elearning.form.WordForm,org.springframework.validation.BindingResult)
+2017-11-03 21:09:44,442 - Mapped "{[/word/pie],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.Map<java.lang.String, java.lang.Integer>> com.ican.elearning.controller.WordController.pie()
+2017-11-03 21:09:44,445 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-03 21:09:44,445 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-03 21:09:44,495 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 21:09:44,495 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 21:09:44,555 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 21:09:44,594 - Adding welcome page: class path resource [static/index.html]
+2017-11-03 21:09:44,955 - Registering beans for JMX exposure on startup
+2017-11-03 21:09:44,976 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-11-03 21:09:44,986 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-03 21:09:44,996 - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-03 21:09:45,019 - Using a shared selector for servlet write/read
+2017-11-03 21:09:45,035 - Tomcat started on port(s): 8080 (http)
+2017-11-03 21:09:45,041 - Started ElearningApplication in 6.956 seconds (JVM running for 8.089)
+2017-11-03 21:11:34,506 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-03 21:11:34,507 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-03 21:11:34,527 - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-11-03 21:11:34,587 - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-03 21:18:16,702 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 21:09:38 CST 2017]; root of context hierarchy
+2017-11-03 21:18:16,709 - Unregistering JMX-exposed beans on shutdown
+2017-11-03 21:18:16,713 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-11-03 21:19:31,788 - Starting ElearningApplication on guojiede-MBP with PID 5679 (/Users/guojie/GitHub/elearning/target/classes started by guojie in /Users/guojie/GitHub/elearning)
+2017-11-03 21:19:31,793 - No active profile set, falling back to default profiles: default
+2017-11-03 21:19:31,982 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 21:19:31 CST 2017]; root of context hierarchy
+2017-11-03 21:19:32,113 - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-03 21:19:34,303 - Tomcat initialized with port(s): 8080 (http)
+2017-11-03 21:19:34,343 - Starting service [Tomcat]
+2017-11-03 21:19:34,344 - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-11-03 21:19:34,455 - Initializing Spring embedded WebApplicationContext
+2017-11-03 21:19:34,455 - Root WebApplicationContext: initialization completed in 2473 ms
+2017-11-03 21:19:34,658 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-03 21:19:34,669 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-03 21:19:34,671 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-03 21:19:34,671 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-03 21:19:34,672 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-03 21:19:35,638 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-03 21:19:35,660 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-03 21:19:35,870 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-03 21:19:35,873 - HHH000206: hibernate.properties not found
+2017-11-03 21:19:35,875 - HHH000021: Bytecode provider name : javassist
+2017-11-03 21:19:35,952 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-03 21:19:36,118 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-03 21:19:36,996 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-03 21:19:37,939 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Fri Nov 03 21:19:31 CST 2017]; root of context hierarchy
+2017-11-03 21:19:38,043 - Mapped "{[/exam/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.insert(com.ican.elearning.form.ExamForm)
+2017-11-03 21:19:38,045 - Mapped "{[/exam/autoGenerateExam],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.autoGenerateExam(java.lang.String)
+2017-11-03 21:19:38,047 - Mapped "{[/paragraph/delete],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.delete(java.lang.Integer)
+2017-11-03 21:19:38,048 - Mapped "{[/paragraph/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Paragraph>> com.ican.elearning.controller.ParagraphController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 21:19:38,048 - Mapped "{[/paragraph/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.insert(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-11-03 21:19:38,052 - Mapped "{[/question/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Question>> com.ican.elearning.controller.QuestionController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 21:19:38,053 - Mapped "{[/question/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.insert(com.ican.elearning.form.QuestionForm,org.springframework.validation.BindingResult)
+2017-11-03 21:19:38,054 - Mapped "{[/question/findOne],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.QuestionDTO> com.ican.elearning.controller.QuestionController.findOne(java.lang.Integer)
+2017-11-03 21:19:38,055 - Mapped "{[/question/autoGenerated],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.autoGenerated(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-11-03 21:19:38,057 - Mapped "{[/file/delete],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.delete(java.lang.Integer)
+2017-11-03 21:19:38,058 - Mapped "{[/file/files/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.Resource> com.ican.elearning.controller.UploadController.getFile(java.lang.String)
+2017-11-03 21:19:38,058 - Mapped "{[/file/],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.handleFileUpload(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2017-11-03 21:19:38,059 - Mapped "{[/file/getfiles],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.getListFile(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 21:19:38,061 - Mapped "{[/auth/register],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.register(com.ican.elearning.form.UserForm,org.springframework.validation.BindingResult)
+2017-11-03 21:19:38,061 - Mapped "{[/auth/login],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.login(java.lang.String,java.lang.String)
+2017-11-03 21:19:38,063 - Mapped "{[/word/delete],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.delete(java.lang.Integer)
+2017-11-03 21:19:38,066 - Mapped "{[/word/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Word>> com.ican.elearning.controller.WordController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-11-03 21:19:38,067 - Mapped "{[/word/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.insert(com.ican.elearning.form.WordForm,org.springframework.validation.BindingResult)
+2017-11-03 21:19:38,068 - Mapped "{[/word/pie],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.Map<java.lang.String, java.lang.Integer>> com.ican.elearning.controller.WordController.pie()
+2017-11-03 21:19:38,072 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-03 21:19:38,072 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-03 21:19:38,125 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 21:19:38,126 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 21:19:38,196 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-03 21:19:38,231 - Adding welcome page: class path resource [static/index.html]
+2017-11-03 21:19:38,680 - Registering beans for JMX exposure on startup
+2017-11-03 21:19:38,700 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-11-03 21:19:38,714 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-03 21:19:38,727 - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-03 21:19:38,754 - Using a shared selector for servlet write/read
+2017-11-03 21:19:38,776 - Tomcat started on port(s): 8080 (http)
+2017-11-03 21:19:38,783 - Started ElearningApplication in 8.01 seconds (JVM running for 8.979)
+2017-11-03 21:19:42,614 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-03 21:19:42,614 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-03 21:19:42,644 - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2017-11-03 21:19:42,837 - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-03 21:20:15,593 - Adding annotator tokenize
+2017-11-03 21:20:15,593 - Adding annotator tokenize
+2017-11-03 21:20:15,606 - No tokenizer type provided. Defaulting to PTBTokenizer.
+2017-11-03 21:20:15,620 - Adding annotator ssplit
+2017-11-03 21:20:15,620 - Adding annotator ssplit
+2017-11-03 21:20:15,626 - Adding annotator pos
+2017-11-03 21:20:15,779 - Adding annotator tokenize
+2017-11-03 21:20:18,387 - Loading POS tagger from edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger ... done [2.7 sec].
+2017-11-03 21:20:18,387 - Adding annotator ssplit
+2017-11-03 21:20:18,387 - Adding annotator pos
+2017-11-03 21:20:18,388 - Adding annotator lemma
+2017-11-03 21:20:18,388 - Adding annotator lemma

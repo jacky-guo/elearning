@@ -1,0 +1,29 @@
+spring:
+  http:
+    multipart:
+      max-file-size: 5000KB
+      max-request-size: 5000KB
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 1234
+    url: jdbc:mysql://127.0.0.1/elearning?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+#  jackson:
+#    default-property-inclusion: non_null
+server:
+  context-path: /elearning
+
+## JWT
+#jwt:
+#  header: Authorization
+#  secret: mySecret
+#  expiration: 604800
+#  tokenHead: "Bearer "
+#  route:
+#    authentication:
+#      path: auth
+#      refresh: refresh
+#      register: "auth/register"
+

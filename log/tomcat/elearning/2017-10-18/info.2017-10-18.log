@@ -1,0 +1,36 @@
+2017-10-18 00:02:50,268 - Spider www.newsinlevels.com started!
+2017-10-18 00:02:54,215 - downloading page success https://www.newsinlevels.com/?s=halloween
+2017-10-18 00:02:57,242 - downloading page success https://www.newsinlevels.com/products/jackson-zombies-in-london-level-2/
+2017-10-18 00:02:57,277 - Adding annotator tokenize
+2017-10-18 00:02:57,277 - Adding annotator ssplit
+2017-10-18 00:02:57,334 - downloading page success https://www.newsinlevels.com/products/halloween-fireballs-level-3/
+2017-10-18 00:02:57,347 - Adding annotator tokenize
+2017-10-18 00:02:57,348 - Adding annotator ssplit
+2017-10-18 00:02:57,538 - downloading page success https://www.newsinlevels.com/products/halloween-fireballs-level-1/
+2017-10-18 00:02:57,548 - Adding annotator tokenize
+2017-10-18 00:02:57,548 - Adding annotator ssplit
+2017-10-18 00:02:57,702 - downloading page success https://www.newsinlevels.com/products/jackson-zombies-in-london-level-1/
+2017-10-18 00:02:57,710 - Adding annotator tokenize
+2017-10-18 00:02:57,710 - Adding annotator ssplit
+2017-10-18 00:02:58,179 - downloading page success https://www.newsinlevels.com/products/halloween-fireballs-level-2/
+2017-10-18 00:02:58,187 - Adding annotator tokenize
+2017-10-18 00:02:58,187 - Adding annotator ssplit
+2017-10-18 00:02:58,942 - downloading page success https://www.newsinlevels.com/products/cat-festival-in-tokyo-level-3/
+2017-10-18 00:02:58,952 - Adding annotator tokenize
+2017-10-18 00:02:58,952 - Adding annotator ssplit
+2017-10-18 00:02:58,999 - downloading page success https://www.newsinlevels.com/products/cat-festival-in-tokyo-level-2/
+2017-10-18 00:02:59,003 - Adding annotator tokenize
+2017-10-18 00:02:59,004 - Adding annotator ssplit
+2017-10-18 00:02:59,889 - downloading page success https://www.newsinlevels.com/products/very-small-pumpkins-level-3/
+2017-10-18 00:02:59,896 - Adding annotator tokenize
+2017-10-18 00:02:59,896 - Adding annotator ssplit
+2017-10-18 00:03:00,183 - downloading page success https://www.newsinlevels.com/products/very-small-pumpkins-level-2/
+2017-10-18 00:03:00,190 - Adding annotator tokenize
+2017-10-18 00:03:00,190 - Adding annotator ssplit
+2017-10-18 00:03:01,251 - downloading page success https://www.newsinlevels.com/products/cat-festival-in-tokyo-level-1/
+2017-10-18 00:03:01,257 - Adding annotator tokenize
+2017-10-18 00:03:01,257 - Adding annotator ssplit
+2017-10-18 00:03:02,268 - Spider www.newsinlevels.com closed! 11 pages downloaded.
+2017-10-18 00:03:33,178 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Tue Oct 17 23:53:06 CST 2017]; root of context hierarchy
+2017-10-18 00:03:33,181 - Unregistering JMX-exposed beans on shutdown
+2017-10-18 00:03:33,184 - Closing JPA EntityManagerFactory for persistence unit 'default'

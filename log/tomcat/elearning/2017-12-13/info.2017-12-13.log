@@ -1,0 +1,333 @@
+2017-12-13 00:00:00,347 - Spider www.newsinlevels.com started!
+2017-12-13 00:00:03,307 - downloading page success https://www.newsinlevels.com/page/1
+2017-12-13 00:00:05,812 - downloading page success https://www.newsinlevels.com/products/bears-in-ukraine-level-1/
+2017-12-13 00:00:05,952 - Adding annotator tokenize
+2017-12-13 00:00:05,959 - No tokenizer type provided. Defaulting to PTBTokenizer.
+2017-12-13 00:00:05,968 - Adding annotator ssplit
+2017-12-13 00:00:06,201 - downloading page success https://www.newsinlevels.com/products/leopard-in-a-village-in-india-level-1/
+2017-12-13 00:00:06,216 - Adding annotator tokenize
+2017-12-13 00:00:06,217 - Adding annotator ssplit
+2017-12-13 00:00:06,249 - downloading page success https://www.newsinlevels.com/products/yemen-gets-help-level-1/
+2017-12-13 00:00:06,259 - Adding annotator tokenize
+2017-12-13 00:00:06,259 - Adding annotator ssplit
+2017-12-13 00:00:06,410 - downloading page success https://www.newsinlevels.com/products/amur-tiger-cubs-level-1/
+2017-12-13 00:00:06,418 - Adding annotator tokenize
+2017-12-13 00:00:06,419 - Adding annotator ssplit
+2017-12-13 00:00:08,463 - downloading page success https://www.newsinlevels.com/products/boat-accident-in-south-korea-level-1/
+2017-12-13 00:00:08,472 - Adding annotator tokenize
+2017-12-13 00:00:08,472 - Adding annotator ssplit
+2017-12-13 00:00:08,488 - downloading page success https://www.newsinlevels.com/products/the-coldest-village-in-the-world-level-1/
+2017-12-13 00:00:08,494 - Adding annotator tokenize
+2017-12-13 00:00:08,494 - Adding annotator ssplit
+2017-12-13 00:00:09,098 - downloading page success https://www.newsinlevels.com/products/famous-painter-from-japan-level-1/
+2017-12-13 00:00:09,106 - Adding annotator tokenize
+2017-12-13 00:00:09,106 - Adding annotator ssplit
+2017-12-13 00:00:09,286 - downloading page success https://www.newsinlevels.com/products/the-little-prince-level-1/
+2017-12-13 00:00:09,295 - Adding annotator tokenize
+2017-12-13 00:00:09,295 - Adding annotator ssplit
+2017-12-13 00:00:09,389 - downloading page success https://www.newsinlevels.com/products/special-video-of-a-snow-leopard-level-1/
+2017-12-13 00:00:09,396 - Adding annotator tokenize
+2017-12-13 00:00:09,396 - Adding annotator ssplit
+2017-12-13 00:00:11,307 - downloading page success https://www.newsinlevels.com/products/small-nice-animal-level-1/
+2017-12-13 00:00:11,312 - Adding annotator tokenize
+2017-12-13 00:00:11,312 - Adding annotator ssplit
+2017-12-13 00:00:11,315 - downloading page success https://www.newsinlevels.com/products/krampus-at-christmas-level-1/
+2017-12-13 00:00:11,320 - Adding annotator tokenize
+2017-12-13 00:00:11,320 - Adding annotator ssplit
+2017-12-13 00:00:13,050 - downloading page success https://www.newsinlevels.com/products/very-big-nativity-scene-level-1/
+2017-12-13 00:00:13,058 - Adding annotator tokenize
+2017-12-13 00:00:13,058 - Adding annotator ssplit
+2017-12-13 00:00:14,459 - downloading page success https://www.newsinlevels.com/page/3
+2017-12-13 00:00:14,707 - downloading page success https://www.newsinlevels.com/page/2
+2017-12-13 00:00:15,094 - downloading page success https://www.newsinlevels.com/page/4
+2017-12-13 00:00:17,032 - downloading page success https://www.newsinlevels.com/page/5
+2017-12-13 00:00:18,090 - downloading page success https://www.newsinlevels.com/page/179
+2017-12-13 00:00:18,179 - downloading page success https://www.newsinlevels.com/products/pope-francis-gives-lunch-to-the-poor-level-1/
+2017-12-13 00:00:18,185 - Adding annotator tokenize
+2017-12-13 00:00:18,186 - Adding annotator ssplit
+2017-12-13 00:00:18,851 - downloading page success https://www.newsinlevels.com/products/big-sapphire-from-sri-lanka-level-1/
+2017-12-13 00:00:18,855 - Adding annotator tokenize
+2017-12-13 00:00:18,855 - Adding annotator ssplit
+2017-12-13 00:00:19,475 - downloading page success https://www.newsinlevels.com/page/6
+2017-12-13 00:00:19,858 - downloading page success https://www.newsinlevels.com/products/waffle-factory-fire-level-1/
+2017-12-13 00:00:19,865 - Adding annotator tokenize
+2017-12-13 00:00:19,865 - Adding annotator ssplit
+2017-12-13 00:00:20,937 - downloading page success https://www.newsinlevels.com/products/terror-attack-in-egypt-level-1/
+2017-12-13 00:00:20,946 - Adding annotator tokenize
+2017-12-13 00:00:20,946 - Adding annotator ssplit
+2017-12-13 00:00:21,564 - downloading page success https://www.newsinlevels.com/products/durian-fruit-level-1/
+2017-12-13 00:00:21,572 - Adding annotator tokenize
+2017-12-13 00:00:21,572 - Adding annotator ssplit
+2017-12-13 00:00:21,772 - downloading page success https://www.newsinlevels.com/products/viennas-christmas-markets-level-1/
+2017-12-13 00:00:21,781 - Adding annotator tokenize
+2017-12-13 00:00:21,781 - Adding annotator ssplit
+2017-12-13 00:00:21,900 - downloading page success https://www.newsinlevels.com/products/robert-mugabe-resigns-level-1/
+2017-12-13 00:00:21,906 - Adding annotator tokenize
+2017-12-13 00:00:21,906 - Adding annotator ssplit
+2017-12-13 00:00:22,140 - downloading page success https://www.newsinlevels.com/products/news-in-levels-is-for-free-level-1/
+2017-12-13 00:00:22,145 - Adding annotator tokenize
+2017-12-13 00:00:22,145 - Adding annotator ssplit
+2017-12-13 00:00:23,080 - downloading page success https://www.newsinlevels.com/products/ninja-jump-stops-a-thief-level-1/
+2017-12-13 00:00:23,086 - Adding annotator tokenize
+2017-12-13 00:00:23,086 - Adding annotator ssplit
+2017-12-13 00:00:24,218 - downloading page success https://www.newsinlevels.com/page/7
+2017-12-13 00:00:24,300 - downloading page success https://www.newsinlevels.com/products/titanosaur-in-new-york-level-1/
+2017-12-13 00:00:24,305 - Adding annotator tokenize
+2017-12-13 00:00:24,306 - Adding annotator ssplit
+2017-12-13 00:00:24,512 - downloading page success https://www.newsinlevels.com/products/tasmanias-giant-lobsters-level-1/
+2017-12-13 00:00:24,517 - Adding annotator tokenize
+2017-12-13 00:00:24,517 - Adding annotator ssplit
+2017-12-13 00:00:25,372 - downloading page success https://www.newsinlevels.com/products/lion-cage-in-australia-level-1/
+2017-12-13 00:00:25,381 - Adding annotator tokenize
+2017-12-13 00:00:25,381 - Adding annotator ssplit
+2017-12-13 00:00:25,655 - downloading page success https://www.newsinlevels.com/page/8
+2017-12-13 00:00:26,791 - downloading page success https://www.newsinlevels.com/products/men-fly-into-a-plane-level-1/
+2017-12-13 00:00:26,798 - Adding annotator tokenize
+2017-12-13 00:00:26,798 - Adding annotator ssplit
+2017-12-13 00:00:27,732 - downloading page success https://www.newsinlevels.com/products/minecraft-lenin-level-1/
+2017-12-13 00:00:27,739 - Adding annotator tokenize
+2017-12-13 00:00:27,739 - Adding annotator ssplit
+2017-12-13 00:00:27,754 - downloading page success https://www.newsinlevels.com/products/easy-speaking-in-english-level-1/
+2017-12-13 00:00:27,758 - Adding annotator tokenize
+2017-12-13 00:00:27,758 - Adding annotator ssplit
+2017-12-13 00:00:27,899 - downloading page success https://www.newsinlevels.com/products/malayan-tiger-cubs-born-level-1/
+2017-12-13 00:00:27,904 - Adding annotator tokenize
+2017-12-13 00:00:27,905 - Adding annotator ssplit
+2017-12-13 00:00:28,023 - downloading page success https://www.newsinlevels.com/products/man-is-friends-with-a-kodiak-bear-level-1/
+2017-12-13 00:00:28,028 - Adding annotator tokenize
+2017-12-13 00:00:28,028 - Adding annotator ssplit
+2017-12-13 00:00:29,663 - downloading page success https://www.newsinlevels.com/products/temples-in-cambodia-level-1/
+2017-12-13 00:00:29,667 - Adding annotator tokenize
+2017-12-13 00:00:29,667 - Adding annotator ssplit
+2017-12-13 00:00:30,684 - downloading page success https://www.newsinlevels.com/products/earthquake-in-iran-and-iraq-level-1/
+2017-12-13 00:00:30,687 - Adding annotator tokenize
+2017-12-13 00:00:30,688 - Adding annotator ssplit
+2017-12-13 00:00:30,812 - downloading page success https://www.newsinlevels.com/products/prison-beauty-pageant-level-1/
+2017-12-13 00:00:30,816 - Adding annotator tokenize
+2017-12-13 00:00:30,816 - Adding annotator ssplit
+2017-12-13 00:00:31,342 - downloading page success https://www.newsinlevels.com/products/trump-and-elephants-level-1/
+2017-12-13 00:00:31,347 - Adding annotator tokenize
+2017-12-13 00:00:31,348 - Adding annotator ssplit
+2017-12-13 00:00:31,404 - downloading page success https://www.newsinlevels.com/products/floor-falls-down-level-1/
+2017-12-13 00:00:31,408 - Adding annotator tokenize
+2017-12-13 00:00:31,408 - Adding annotator ssplit
+2017-12-13 00:00:31,568 - downloading page success https://www.newsinlevels.com/products/deer-hits-a-police-car-level-1/
+2017-12-13 00:00:31,571 - Adding annotator tokenize
+2017-12-13 00:00:31,571 - Adding annotator ssplit
+2017-12-13 00:00:33,375 - downloading page success https://www.newsinlevels.com/products/new-supersonic-plane-level-1/
+2017-12-13 00:00:33,379 - Adding annotator tokenize
+2017-12-13 00:00:33,379 - Adding annotator ssplit
+2017-12-13 00:00:34,198 - downloading page success https://www.newsinlevels.com/products/big-water-in-greece-level-1/
+2017-12-13 00:00:34,202 - Adding annotator tokenize
+2017-12-13 00:00:34,203 - Adding annotator ssplit
+2017-12-13 00:00:34,315 - downloading page success https://www.newsinlevels.com/products/trump-in-china-level-1/
+2017-12-13 00:00:34,318 - Adding annotator tokenize
+2017-12-13 00:00:34,319 - Adding annotator ssplit
+2017-12-13 00:00:34,899 - downloading page success https://www.newsinlevels.com/products/facebook-group-level-1/
+2017-12-13 00:00:34,904 - Adding annotator tokenize
+2017-12-13 00:00:34,905 - Adding annotator ssplit
+2017-12-13 00:00:34,911 - downloading page success https://www.newsinlevels.com/products/plane-sinks-level-1/
+2017-12-13 00:00:34,914 - Adding annotator tokenize
+2017-12-13 00:00:34,914 - Adding annotator ssplit
+2017-12-13 00:00:35,567 - downloading page success https://www.newsinlevels.com/products/goat-and-tiger-become-friends-level-1/
+2017-12-13 00:00:35,573 - Adding annotator tokenize
+2017-12-13 00:00:35,573 - Adding annotator ssplit
+2017-12-13 00:00:36,955 - downloading page success https://www.newsinlevels.com/products/millions-of-jellyfish-level-1/
+2017-12-13 00:00:36,961 - Adding annotator tokenize
+2017-12-13 00:00:36,961 - Adding annotator ssplit
+2017-12-13 00:00:37,608 - downloading page success https://www.newsinlevels.com/products/swim-in-the-antarctic-level-1/
+2017-12-13 00:00:37,616 - Adding annotator tokenize
+2017-12-13 00:00:37,616 - Adding annotator ssplit
+2017-12-13 00:00:37,761 - downloading page success https://www.newsinlevels.com/page/9
+2017-12-13 00:00:38,161 - downloading page success https://www.newsinlevels.com/products/fake-news-and-the-dictionary-level-1/
+2017-12-13 00:00:38,164 - Adding annotator tokenize
+2017-12-13 00:00:38,164 - Adding annotator ssplit
+2017-12-13 00:00:38,609 - downloading page success https://www.newsinlevels.com/products/chocolate-fashion-show-level-1/
+2017-12-13 00:00:38,613 - Adding annotator tokenize
+2017-12-13 00:00:38,613 - Adding annotator ssplit
+2017-12-13 00:00:39,274 - downloading page success https://www.newsinlevels.com/products/be-safe-with-a-selfie-stick-level-1/
+2017-12-13 00:00:39,277 - Adding annotator tokenize
+2017-12-13 00:00:39,277 - Adding annotator ssplit
+2017-12-13 00:00:39,625 - downloading page success https://www.newsinlevels.com/products/sheep-and-faces-level-1/
+2017-12-13 00:00:39,628 - Adding annotator tokenize
+2017-12-13 00:00:39,628 - Adding annotator ssplit
+2017-12-13 00:00:39,788 - downloading page success https://www.newsinlevels.com/products/gas-explosion-in-russia-level-1/
+2017-12-13 00:00:39,791 - Adding annotator tokenize
+2017-12-13 00:00:39,791 - Adding annotator ssplit
+2017-12-13 00:00:40,462 - downloading page success https://www.newsinlevels.com/products/dead-turtles-in-the-pacific-level-1/
+2017-12-13 00:00:40,468 - Adding annotator tokenize
+2017-12-13 00:00:40,468 - Adding annotator ssplit
+2017-12-13 00:00:41,528 - downloading page success https://www.newsinlevels.com/products/new-type-of-orangutan-level-1/
+2017-12-13 00:00:41,533 - Adding annotator tokenize
+2017-12-13 00:00:41,533 - Adding annotator ssplit
+2017-12-13 00:00:41,690 - downloading page success https://www.newsinlevels.com/products/learning-by-songs-level-1/
+2017-12-13 00:00:41,695 - Adding annotator tokenize
+2017-12-13 00:00:41,696 - Adding annotator ssplit
+2017-12-13 00:00:41,902 - downloading page success https://www.newsinlevels.com/products/presidents-dog-pees-in-palace-level-1/
+2017-12-13 00:00:41,907 - Adding annotator tokenize
+2017-12-13 00:00:41,907 - Adding annotator ssplit
+2017-12-13 00:00:42,293 - downloading page success https://www.newsinlevels.com/page/10
+2017-12-13 00:00:43,696 - downloading page success https://www.newsinlevels.com/products/five-children-in-texas-level-1/
+2017-12-13 00:00:43,702 - Adding annotator tokenize
+2017-12-13 00:00:43,702 - Adding annotator ssplit
+2017-12-13 00:00:43,773 - downloading page success https://www.newsinlevels.com/products/fast-plane-goes-down-level-1/
+2017-12-13 00:00:43,779 - Adding annotator tokenize
+2017-12-13 00:00:43,779 - Adding annotator ssplit
+2017-12-13 00:00:43,916 - downloading page success https://www.newsinlevels.com/products/honey-on-a-road-level-1/
+2017-12-13 00:00:43,919 - Adding annotator tokenize
+2017-12-13 00:00:43,919 - Adding annotator ssplit
+2017-12-13 00:00:46,012 - downloading page success https://www.newsinlevels.com/page/178
+2017-12-13 00:00:46,529 - downloading page success https://www.newsinlevels.com/page/174
+2017-12-13 00:00:46,731 - downloading page success https://www.newsinlevels.com/page/175
+2017-12-13 00:00:46,926 - downloading page success https://www.newsinlevels.com/page/177
+2017-12-13 00:00:47,915 - downloading page success https://www.newsinlevels.com/products/strange-village-in-argentina-level-1/
+2017-12-13 00:00:47,920 - Adding annotator tokenize
+2017-12-13 00:00:47,921 - Adding annotator ssplit
+2017-12-13 00:00:48,014 - downloading page success https://www.newsinlevels.com/page/176
+2017-12-13 00:00:49,482 - downloading page success https://www.newsinlevels.com/products/conjoined-twins-born-in-palestine-level-1/
+2017-12-13 00:00:49,488 - Adding annotator tokenize
+2017-12-13 00:00:49,488 - Adding annotator ssplit
+2017-12-13 00:00:50,526 - downloading page success https://www.newsinlevels.com/products/large-picture-of-kim-level-1/
+2017-12-13 00:00:50,533 - Adding annotator tokenize
+2017-12-13 00:00:50,533 - Adding annotator ssplit
+2017-12-13 00:00:51,283 - downloading page success https://www.newsinlevels.com/products/in-the-middle-of-a-river-level-1/
+2017-12-13 00:00:51,288 - Adding annotator tokenize
+2017-12-13 00:00:51,288 - Adding annotator ssplit
+2017-12-13 00:00:51,452 - downloading page success https://www.newsinlevels.com/products/hot-air-balloons-in-argentina-level-1/
+2017-12-13 00:00:51,457 - Adding annotator tokenize
+2017-12-13 00:00:51,458 - Adding annotator ssplit
+2017-12-13 00:00:51,645 - downloading page success https://www.newsinlevels.com/products/running-for-blind-people-level-1/
+2017-12-13 00:00:51,650 - Adding annotator tokenize
+2017-12-13 00:00:51,650 - Adding annotator ssplit
+2017-12-13 00:00:51,665 - downloading page success https://www.newsinlevels.com/products/wildfire-in-brazil-level-1/
+2017-12-13 00:00:51,670 - Adding annotator tokenize
+2017-12-13 00:00:51,670 - Adding annotator ssplit
+2017-12-13 00:00:52,861 - downloading page success https://www.newsinlevels.com/products/woman-poisons-27-people-level-1/
+2017-12-13 00:00:52,866 - Adding annotator tokenize
+2017-12-13 00:00:52,866 - Adding annotator ssplit
+2017-12-13 00:00:53,636 - downloading page success https://www.newsinlevels.com/products/lgbt-groups-take-up-weapons-level-1/
+2017-12-13 00:00:53,641 - Adding annotator tokenize
+2017-12-13 00:00:53,641 - Adding annotator ssplit
+2017-12-13 00:00:53,662 - downloading page success https://www.newsinlevels.com/products/octopuses-in-wales-level-1/
+2017-12-13 00:00:53,667 - Adding annotator tokenize
+2017-12-13 00:00:53,667 - Adding annotator ssplit
+2017-12-13 00:00:53,694 - downloading page success https://www.newsinlevels.com/products/videos-in-levels-level-1/
+2017-12-13 00:00:53,700 - Adding annotator tokenize
+2017-12-13 00:00:53,700 - Adding annotator ssplit
+2017-12-13 00:00:54,724 - downloading page success https://www.newsinlevels.com/page/11
+2017-12-13 00:00:55,072 - downloading page success https://www.newsinlevels.com/products/south-koreans-start-to-like-cheese-level-1/
+2017-12-13 00:00:55,078 - Adding annotator tokenize
+2017-12-13 00:00:55,078 - Adding annotator ssplit
+2017-12-13 00:00:55,931 - downloading page success https://www.newsinlevels.com/products/rare-rhino-is-born-level-1/
+2017-12-13 00:00:55,937 - Adding annotator tokenize
+2017-12-13 00:00:55,937 - Adding annotator ssplit
+2017-12-13 00:00:56,057 - downloading page success https://www.newsinlevels.com/products/activists-body-found-level-1/
+2017-12-13 00:00:56,063 - Adding annotator tokenize
+2017-12-13 00:00:56,063 - Adding annotator ssplit
+2017-12-13 00:00:56,472 - downloading page success https://www.newsinlevels.com/products/president-xi-jinping-level-1/
+2017-12-13 00:00:56,486 - Adding annotator tokenize
+2017-12-13 00:00:56,486 - Adding annotator ssplit
+2017-12-13 00:00:56,907 - downloading page success https://www.newsinlevels.com/products/awesome-video-of-the-sun-level-1/
+2017-12-13 00:00:56,913 - Adding annotator tokenize
+2017-12-13 00:00:56,913 - Adding annotator ssplit
+2017-12-13 00:00:57,038 - downloading page success https://www.newsinlevels.com/products/risks-of-technology-level-1/
+2017-12-13 00:00:57,044 - Adding annotator tokenize
+2017-12-13 00:00:57,044 - Adding annotator ssplit
+2017-12-13 00:00:58,229 - downloading page success https://www.newsinlevels.com/products/factory-in-indonesia-level-1/
+2017-12-13 00:00:58,234 - Adding annotator tokenize
+2017-12-13 00:00:58,235 - Adding annotator ssplit
+2017-12-13 00:00:58,553 - downloading page success https://www.newsinlevels.com/products/train-hits-soldiers-level-1/
+2017-12-13 00:00:58,559 - Adding annotator tokenize
+2017-12-13 00:00:58,559 - Adding annotator ssplit
+2017-12-13 00:00:58,997 - downloading page success https://www.newsinlevels.com/products/grammar-for-speaking-level-1/
+2017-12-13 00:00:59,003 - Adding annotator tokenize
+2017-12-13 00:00:59,003 - Adding annotator ssplit
+2017-12-13 00:00:59,506 - downloading page success https://www.newsinlevels.com/products/finding-water-on-other-planets-level-1/
+2017-12-13 00:00:59,517 - Adding annotator tokenize
+2017-12-13 00:00:59,518 - Adding annotator ssplit
+2017-12-13 00:01:00,430 - downloading page success https://www.newsinlevels.com/products/pets-in-costumes-level-1/
+2017-12-13 00:01:00,436 - Adding annotator tokenize
+2017-12-13 00:01:00,436 - Adding annotator ssplit
+2017-12-13 00:01:00,492 - downloading page success https://www.newsinlevels.com/page/12
+2017-12-13 00:01:00,716 - downloading page success https://www.newsinlevels.com/products/fortress-in-jerusalem-level-1/
+2017-12-13 00:01:00,747 - Adding annotator tokenize
+2017-12-13 00:01:00,748 - Adding annotator ssplit
+2017-12-13 00:01:01,369 - downloading page success https://www.newsinlevels.com/products/koala-on-a-drilling-rig-level-1/
+2017-12-13 00:01:01,374 - Adding annotator tokenize
+2017-12-13 00:01:01,375 - Adding annotator ssplit
+2017-12-13 00:01:02,181 - downloading page success https://www.newsinlevels.com/products/halloween-at-a-chicago-zoo-level-1/
+2017-12-13 00:01:02,187 - Adding annotator tokenize
+2017-12-13 00:01:02,187 - Adding annotator ssplit
+2017-12-13 00:01:02,745 - downloading page success https://www.newsinlevels.com/products/emotions-of-dogs-level-1/
+2017-12-13 00:01:02,751 - Adding annotator tokenize
+2017-12-13 00:01:02,751 - Adding annotator ssplit
+2017-12-13 00:01:02,994 - downloading page success https://www.newsinlevels.com/products/rohingya-refugees-level-1/
+2017-12-13 00:01:03,001 - Adding annotator tokenize
+2017-12-13 00:01:03,001 - Adding annotator ssplit
+2017-12-13 00:01:03,275 - downloading page success https://www.newsinlevels.com/products/church-comes-out-of-the-water-level-1/
+2017-12-13 00:01:03,281 - Adding annotator tokenize
+2017-12-13 00:01:03,281 - Adding annotator ssplit
+2017-12-13 00:01:03,493 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Tue Dec 12 23:57:30 CST 2017]; root of context hierarchy
+2017-12-13 00:01:03,496 - Unregistering JMX-exposed beans on shutdown
+2017-12-13 00:01:03,500 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-12-13 00:01:17,138 - Starting ElearningApplication on guojiede-MBP.lan with PID 1082 (/Users/guojie/GitHub/elearning/target/classes started by guojie in /Users/guojie/GitHub/elearning)
+2017-12-13 00:01:17,201 - No active profile set, falling back to default profiles: default
+2017-12-13 00:01:17,470 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Wed Dec 13 00:01:17 CST 2017]; root of context hierarchy
+2017-12-13 00:01:17,868 - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-13 00:01:23,863 - Tomcat initialized with port(s): 8080 (http)
+2017-12-13 00:01:23,893 - Starting service [Tomcat]
+2017-12-13 00:01:23,895 - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-12-13 00:01:24,075 - Initializing Spring embedded WebApplicationContext
+2017-12-13 00:01:24,075 - Root WebApplicationContext: initialization completed in 6605 ms
+2017-12-13 00:01:24,503 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-13 00:01:24,511 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-13 00:01:24,512 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-13 00:01:24,513 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-13 00:01:24,513 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-13 00:01:26,047 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-12-13 00:01:26,090 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-12-13 00:01:26,554 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-12-13 00:01:26,565 - HHH000206: hibernate.properties not found
+2017-12-13 00:01:26,567 - HHH000021: Bytecode provider name : javassist
+2017-12-13 00:01:26,717 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-13 00:01:27,104 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-13 00:01:28,875 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-12-13 00:01:30,625 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57250572: startup date [Wed Dec 13 00:01:17 CST 2017]; root of context hierarchy
+2017-12-13 00:01:30,829 - Mapped "{[/exam/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.insert(com.ican.elearning.form.ExamForm)
+2017-12-13 00:01:30,845 - Mapped "{[/exam/autoGenerateExam],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.ExamDTO> com.ican.elearning.controller.ExamController.autoGenerateExam(java.lang.String,java.lang.Integer)
+2017-12-13 00:01:30,853 - Mapped "{[/paragraph/delete],methods=[DELETE]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.delete(java.lang.Integer)
+2017-12-13 00:01:30,854 - Mapped "{[/paragraph/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Paragraph>> com.ican.elearning.controller.ParagraphController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-12-13 00:01:30,856 - Mapped "{[/paragraph/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Paragraph> com.ican.elearning.controller.ParagraphController.insert(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-12-13 00:01:30,861 - Mapped "{[/question/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Question>> com.ican.elearning.controller.QuestionController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-12-13 00:01:30,862 - Mapped "{[/question/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.insert(com.ican.elearning.form.QuestionForm,org.springframework.validation.BindingResult)
+2017-12-13 00:01:30,863 - Mapped "{[/question/findOne],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dto.QuestionDTO> com.ican.elearning.controller.QuestionController.findOne(java.lang.Integer)
+2017-12-13 00:01:30,864 - Mapped "{[/question/autoGenerated],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Question> com.ican.elearning.controller.QuestionController.autoGenerated(com.ican.elearning.form.ParagraphForm,org.springframework.validation.BindingResult)
+2017-12-13 00:01:30,874 - Mapped "{[/file/delete],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.delete(java.lang.Integer)
+2017-12-13 00:01:30,875 - Mapped "{[/file/files/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.Resource> com.ican.elearning.controller.UploadController.getFile(java.lang.String)
+2017-12-13 00:01:30,876 - Mapped "{[/file/],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.handleFileUpload(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2017-12-13 00:01:30,878 - Mapped "{[/file/getfiles],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.LessonPlan> com.ican.elearning.controller.UploadController.getListFile(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-12-13 00:01:30,881 - Mapped "{[/auth/register],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.register(com.ican.elearning.form.UserForm,org.springframework.validation.BindingResult)
+2017-12-13 00:01:30,882 - Mapped "{[/auth/login],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.User> com.ican.elearning.controller.UserController.login(java.lang.String,java.lang.String)
+2017-12-13 00:01:30,886 - Mapped "{[/word/delete],methods=[DELETE]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.delete(java.lang.Integer)
+2017-12-13 00:01:30,890 - Mapped "{[/word/list],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.List<com.ican.elearning.dataobject.Word>> com.ican.elearning.controller.WordController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2017-12-13 00:01:30,891 - Mapped "{[/word/insert],methods=[POST]}" onto public com.ican.elearning.VO.ResultVO<com.ican.elearning.dataobject.Word> com.ican.elearning.controller.WordController.insert(com.ican.elearning.form.WordForm,org.springframework.validation.BindingResult)
+2017-12-13 00:01:30,892 - Mapped "{[/word/pie],methods=[GET]}" onto public com.ican.elearning.VO.ResultVO<java.util.Map<java.lang.String, java.lang.Integer>> com.ican.elearning.controller.WordController.pie()
+2017-12-13 00:01:30,897 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-13 00:01:30,898 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-13 00:01:31,081 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-13 00:01:31,081 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-13 00:01:31,227 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-13 00:01:31,305 - Adding welcome page: class path resource [static/index.html]
+2017-12-13 00:01:32,289 - Registering beans for JMX exposure on startup
+2017-12-13 00:01:32,347 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-12-13 00:01:32,371 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-13 00:01:32,474 - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-13 00:01:32,541 - Using a shared selector for servlet write/read
+2017-12-13 00:01:32,572 - Tomcat started on port(s): 8080 (http)
+2017-12-13 00:01:32,585 - Started ElearningApplication in 17.183 seconds (JVM running for 21.811)
+2017-12-13 00:21:16,687 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-13 00:21:16,688 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-13 00:21:16,710 - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2017-12-13 00:21:16,768 - HHH000397: Using ASTQueryTranslatorFactory
