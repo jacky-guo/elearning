@@ -42,16 +42,15 @@ public class ParagraphController {
     @PostMapping("/insert")
     public ResultVO<Paragraph> insert(@Valid ParagraphForm paragraphForm,
                                       BindingResult bindingResult) {
-
         try {
             if (bindingResult.hasErrors()) {
                 log.error("【新增教材】參數不正確，paragraphForm={}", paragraphForm);
-                throw new ElearningException(ResultEnum.PARAM_ERROR.getCode(),
+                throw new ElearningException(ResultEnum.PARAM_EMPTY_ERROR.getCode(),
                         bindingResult.getFieldError().getDefaultMessage());
             }
-        } catch (Exception e) {
+        } catch (ElearningException e) {
             //如果有異常拋出錯誤訊息
-            return ResultVOUtil.error(ResultEnum.BADREQUEST.getCode(),e.getMessage());
+            return ResultVOUtil.error(e.getCode(),e.getMessage());
         }
 
         Paragraph paragraph = ParagraphForm2ParagraphConverter.convert(paragraphForm);
@@ -73,7 +72,6 @@ public class ParagraphController {
 
         List<Word> wordList = new ArrayList<>();
 
-
         for(Map.Entry<String,String> entry :contentMap.entrySet()) {
             Word word = new Word();
             word.setWordContent(entry.getKey());
@@ -92,26 +90,47 @@ public class ParagraphController {
 
     //查詢教材列表
     @GetMapping("/list")
-    public ResultVO<List<Paragraph>> list(@RequestParam("grade") String paragraphGrade,
+    public ResultVO<List<Paragraph>> list(@RequestParam(value = "grade", defaultValue = "3") String paragraphGrade,
+                                          @RequestParam(value = "level", required = false) Integer paragraphLevel,
+                                          @RequestParam(value = "range", defaultValue = "5") Integer range,
                                           @RequestParam(value = "page", defaultValue = "0") Integer page,
                                           @RequestParam(value = "size", defaultValue = "20") Integer size) {
         try {
-            if (StringUtils.isEmpty(paragraphGrade)) {
-                log.error("【查詢教材列表】grade為空");
-                throw new ElearningException(ResultEnum.PARAM_ERROR);
+            if (StringUtils.isEmpty(paragraphGrade) && paragraphLevel == null) {
+                log.error("【查詢教材列表】grade和level為空");
+                throw new ElearningException(ResultEnum.PARAM_EMPTY_ERROR);
             }
-        } catch (Exception e) {
-            return ResultVOUtil.error(ResultEnum.BADREQUEST.getCode(),e.getMessage());
+        } catch (ElearningException e) {
+            return ResultVOUtil.error(e.getCode(),e.getMessage());
         }
 
         PageRequest request = new PageRequest(page,size);
-        Page<Paragraph> paragraphPage = paragraphService.findByParagraphGrade(paragraphGrade,request);
+        Page<Paragraph> paragraphPage;
+        if (paragraphLevel != null ) {
+            paragraphPage = paragraphService.findByParagraphLevelBetween(paragraphLevel - range, paragraphLevel + range ,request);
+        }else {
+            paragraphPage = paragraphService.findByParagraphGrade(paragraphGrade,request);
+        }
 
         HashMap hashMap = new HashMap();
         hashMap.put("count",paragraphPage.getTotalElements());
-        hashMap.put("data",paragraphPage.getContent());
+        hashMap.put("paragraphList",paragraphPage.getContent());
 
         return ResultVOUtil.success(hashMap);
+    }
+
+    //精確查詢(按教材ID查詢)
+    @GetMapping("/query")
+    public ResultVO<Paragraph> query(@RequestParam("paragraphId") Integer paragraphId) {
+        Paragraph paragraph;
+        try {
+            paragraph = paragraphService.findByParagraphId(paragraphId);
+        } catch (Exception e) {
+            //如果有異常拋出錯誤訊息
+            log.error("【教材ID查詢】查詢內容不存在,paragraphId={},錯誤訊息={}",paragraphId,e.getMessage());
+            return ResultVOUtil.error(ResultEnum.NOT_EXIST_ERROR.getCode(),ResultEnum.NOT_EXIST_ERROR.getMessage());
+        }
+        return ResultVOUtil.success(paragraph);
     }
 
     //刪除教材
@@ -122,8 +141,8 @@ public class ParagraphController {
 
         } catch (Exception e) {
             //如果有異常拋出錯誤訊息
-            log.error("【刪除單字】刪除內容不存在,paragraphId={},錯誤訊息={}",paragraphId,e.getMessage());
-            return ResultVOUtil.error(ResultEnum.FORBIDDEN.getCode(),ResultEnum.DELETE_ERROR.getMessage());
+            log.error("【刪除教材】刪除內容不存在,paragraphId={},錯誤訊息={}",paragraphId,e.getMessage());
+            return ResultVOUtil.error(ResultEnum.NOT_EXIST_ERROR.getCode(),ResultEnum.NOT_EXIST_ERROR.getMessage());
         }
         return ResultVOUtil.success();
     }

@@ -8,6 +8,7 @@ import com.ican.elearning.form.WordForm;
 import com.ican.elearning.service.WordService;
 import com.ican.elearning.utils.RestTemplate;
 import com.ican.elearning.utils.ResultVOUtil;
+import com.sun.org.apache.regexp.internal.RE;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,28 +33,30 @@ public class WordController {
     @Autowired
     private WordService wordService;
 
+    //新增單字
     @PostMapping("/insert")
     public ResultVO<Word> insert(@Valid WordForm wordForm,
                                  BindingResult bindingResult) {
         try {
             if (bindingResult.hasErrors()) {
                 log.error("【新增單字】參數不正確，wordForm={}", wordForm);
-                throw new ElearningException(ResultEnum.PARAM_ERROR.getCode(),
+                throw new ElearningException(ResultEnum.PARAM_EMPTY_ERROR.getCode(),
                         bindingResult.getFieldError().getDefaultMessage());
             }
-        } catch (Exception e) {
+        } catch (ElearningException e) {
             //如果有異常拋出錯誤訊息
-            return ResultVOUtil.error(ResultEnum.BADREQUEST.getCode(),e.getMessage());
+            return ResultVOUtil.error(e.getCode(),e.getMessage());
         }
+
         Word word = new Word();
         BeanUtils.copyProperties(wordForm,word);
         Integer word_length = word.getWordContent().length();
         if (word.getWordLevel() == null) {
-            word.setWordLevel(RestTemplate.getLevel(word));
-//            if (word.getWordGrade() == null) {
-//                Integer word_level = Integer.valueOf(wordForm.getWordGrade()) * 100;
-//                word.setWordLevel(word_level);
-//            }
+            try {
+                word.setWordLevel(RestTemplate.getLevel(word));
+            } catch (Exception e) {
+                return ResultVOUtil.error(ResultEnum.PYTHONSERVER_ERROR.getCode(),ResultEnum.PYTHONSERVER_ERROR.getMessage());
+            }
         }
 
         if (word.getWordGrade() == null) {
@@ -65,18 +68,19 @@ public class WordController {
         return ResultVOUtil.success(insertResult.getWordId());
     }
 
+    //相似搜尋
     @GetMapping(value = "query")
-    public ResultVO<List<Word>> query(@RequestParam(value= "wordContent") String wordContent,
+    public ResultVO<List<Word>> query(@RequestParam(value= "wordContent",defaultValue = "") String wordContent,
                                       @RequestParam(value = "page",defaultValue = "0") Integer page,
                                       @RequestParam(value = "size",defaultValue = "20") Integer size) {
         try {
             if (StringUtils.isEmpty(wordContent)) {
                 log.error("【單字查詢(相似搜尋)】wordContent為空");
-                throw new ElearningException(ResultEnum.PARAM_ERROR);
+                throw new ElearningException(ResultEnum.PARAM_EMPTY_ERROR);
             }
-        } catch (Exception e) {
+        } catch (ElearningException e) {
             //如果有異常拋出錯誤訊息
-            return ResultVOUtil.error(ResultEnum.BADREQUEST.getCode(),e.getMessage());
+            return ResultVOUtil.error(e.getCode(),e.getMessage()+"，wordContent不能為空");
         }
 
         PageRequest request = new PageRequest(page,size);
@@ -89,8 +93,9 @@ public class WordController {
 
     }
 
+    //查詢單字列表
     @GetMapping(value="/list")
-    public ResultVO<List<Word>> list(@RequestParam(value= "grade",required = false) String wordGrade,
+    public ResultVO<List<Word>> list(@RequestParam(value= "grade",defaultValue = "3") String wordGrade,
                                      @RequestParam(value= "level",required = false) Integer wordLevel,
                                      @RequestParam(value = "range",defaultValue = "5") Integer range,
                                      @RequestParam(value = "page",defaultValue = "0") Integer page,
@@ -98,11 +103,11 @@ public class WordController {
         try {
             if (StringUtils.isEmpty(wordGrade) && wordLevel == null) {
                 log.error("【查詢單字列表】grade和level為空");
-                throw new ElearningException(ResultEnum.PARAM_ERROR);
+                throw new ElearningException(ResultEnum.PARAM_EMPTY_ERROR);
             }
-        } catch (Exception e) {
+        } catch (ElearningException e) {
             //如果有異常拋出錯誤訊息
-            return ResultVOUtil.error(ResultEnum.BADREQUEST.getCode(),e.getMessage());
+            return ResultVOUtil.error(e.getCode(),e.getMessage()+"，grade和level不能同時為空");
         }
 
         PageRequest request = new PageRequest(page,size);
@@ -126,15 +131,15 @@ public class WordController {
         return ResultVOUtil.success(hashMap);
     }
 
+    //單字刪除
     @DeleteMapping("/delete")
     public ResultVO<Word> delete(@RequestParam("wordId") Integer wordId) {
         try {
             wordService.delete(wordId);
-
         } catch (Exception e) {
             //如果有異常拋出錯誤訊息
             log.error("【刪除單字】刪除內容不存在,wordId={},錯誤訊息={}",wordId,e.getMessage());
-            return ResultVOUtil.error(ResultEnum.FORBIDDEN.getCode(),ResultEnum.DELETE_ERROR.getMessage());
+            return ResultVOUtil.error(ResultEnum.NOT_EXIST_ERROR.getCode(),ResultEnum.NOT_EXIST_ERROR.getMessage());
         }
         return ResultVOUtil.success();
     }

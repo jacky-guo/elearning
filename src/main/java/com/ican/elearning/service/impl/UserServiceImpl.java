@@ -22,12 +22,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User login(String userAccount, String userPassword) {
-        User user = userDao.findByUserAccountAndUserPassword(userAccount,userPassword);
-        if (user == null) {
-            log.error("【用戶登錄】賬號或密碼錯誤,userAccount={},userPassword={}", userAccount,userPassword);
-            throw new ElearningException(ResultEnum.ACCOUNTORPASSWORD_ERROR);
-        }
-        return user;
+        return userDao.findByUserAccountAndUserPassword(userAccount,userPassword);
     }
 
     @Override
@@ -37,7 +32,6 @@ public class UserServiceImpl implements UserService {
             log.error("【用戶註冊】註冊失敗賬號已存在,user={}",user);
             throw new ElearningException(ResultEnum.ACCOUNT_EXIST);
         }
-
         return userDao.save(user);
     }
 

@@ -41,9 +41,13 @@ public class UserController {
         UserVO userVO = new UserVO();
         try {
             user = userService.login(username, password);
-        } catch (Exception e) {
+            if (user == null) {
+                log.error("【用戶登錄】賬號或密碼錯誤,userAccount={},userPassword={}", username,password);
+                throw new ElearningException(ResultEnum.ACCOUNTORPASSWORD_ERROR);
+            }
+        } catch (ElearningException e) {
             //如果有異常拋出錯誤訊息
-            return ResultVOUtil.error(ResultEnum.UNAUTHORIZED.getCode(),e.getMessage());
+            return ResultVOUtil.error(e.getCode(),e.getMessage());
         }
         //將使用者資訊copy到userVO回傳前端
         BeanUtils.copyProperties(user,userVO);
@@ -59,12 +63,12 @@ public class UserController {
         try {
             if (bindingResult.hasErrors()) {
                 log.error("【用戶註冊】參數不正確，userForm={}", userForm);
-                throw new ElearningException(ResultEnum.PARAM_ERROR.getCode(),
+                throw new ElearningException(ResultEnum.PARAM_EMPTY_ERROR.getCode(),
                         bindingResult.getFieldError().getDefaultMessage());
             }
-        } catch (Exception e) {
+        } catch (ElearningException e) {
             //如果有異常拋出錯誤訊息
-            return ResultVOUtil.error(ResultEnum.BADREQUEST.getCode(),e.getMessage());
+            return ResultVOUtil.error(e.getCode(),e.getMessage());
         }
         //TODO 需修改註冊時使用者等級和權限設定
         User user = new User();
@@ -77,9 +81,9 @@ public class UserController {
         User createResult;
         try {
             createResult = userService.register(user);
-        } catch (Exception e) {
+        } catch (ElearningException e) {
             //如果有異常拋出錯誤訊息
-            return ResultVOUtil.error(ResultEnum.FORBIDDEN.getCode(),e.getMessage());
+            return ResultVOUtil.error(e.getCode(),e.getMessage());
         }
 
         UserVO userVO = new UserVO();

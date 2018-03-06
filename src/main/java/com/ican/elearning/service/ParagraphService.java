@@ -16,6 +16,7 @@ public interface ParagraphService {
     List<Paragraph> findAll();
 
     Paragraph findByParagraphId(Integer paragraphId);
+
     //新增教材
     Paragraph save(Paragraph paragraph);
     //根據年級查詢教材
@@ -30,6 +31,5 @@ public interface ParagraphService {
     List<Paragraph> findByCreateTimeBetween(Date dateBefore, Date dateAfter);
     Page<Paragraph> findByParagraphLevelBetween(Integer down,Integer up, Pageable pageable);
     Page<Paragraph> findByParagraphHashtag(String paragraphHashtag,Pageable pageable);
-
 
 }

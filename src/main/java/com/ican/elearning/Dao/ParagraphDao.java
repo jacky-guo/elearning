@@ -1,6 +1,7 @@
 package com.ican.elearning.Dao;
 
 import com.ican.elearning.dataobject.Paragraph;
+import org.python.antlr.op.In;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -21,4 +22,5 @@ public interface ParagraphDao extends JpaRepository<Paragraph,Integer> {
     List<Paragraph> findByCreateTimeBetween(Date dateBefore,Date dateAfter);
     Page<Paragraph> findByParagraphLevelBetween(Integer down,Integer up, Pageable pageable);
     Page<Paragraph> findByParagraphHashtag(String paragraphHashtag,Pageable pageable);
+    Paragraph findByParagraphId(Integer paragraphId);
 }

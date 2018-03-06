@@ -2,6 +2,10 @@ package com.ican.elearning.form;
 
 import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.format.annotation.NumberFormat;
+
+import javax.validation.Valid;
 
 /**
  * Created by JackyGuo
