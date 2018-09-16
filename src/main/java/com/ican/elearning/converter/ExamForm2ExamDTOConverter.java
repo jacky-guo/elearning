@@ -23,7 +23,6 @@ public class ExamForm2ExamDTOConverter {
 
         Gson gson = new Gson();
 
-
         ExamDTO examDTO = new ExamDTO();
         BeanUtils.copyProperties(examForm,examDTO);
 

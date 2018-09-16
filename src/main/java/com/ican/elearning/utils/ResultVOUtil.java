@@ -1,6 +1,7 @@
 package com.ican.elearning.utils;
 
 import com.ican.elearning.VO.ResultVO;
+import com.ican.elearning.enums.ResultEnum;
 
 /**
  * Created by JackyGuo
@@ -10,8 +11,8 @@ public class ResultVOUtil {
     public static ResultVO success(Object object) {
         ResultVO resultVO = new ResultVO();
         resultVO.setData(object);
-        resultVO.setMsg("成功");
-        resultVO.setCode(0);
+        resultVO.setMsg(ResultEnum.SUCCESS.getMessage());
+        resultVO.setCode(ResultEnum.SUCCESS.getCode());
         return resultVO;
     }
 

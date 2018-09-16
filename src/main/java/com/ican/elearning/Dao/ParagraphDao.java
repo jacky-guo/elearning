@@ -23,4 +23,5 @@ public interface ParagraphDao extends JpaRepository<Paragraph,Integer> {
     Page<Paragraph> findByParagraphLevelBetween(Integer down,Integer up, Pageable pageable);
     Page<Paragraph> findByParagraphHashtag(String paragraphHashtag,Pageable pageable);
     Paragraph findByParagraphId(Integer paragraphId);
+    List<Paragraph> findByParagraphGradeOrderByCreateTimeDesc(String paragraphGrade);
 }

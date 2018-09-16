@@ -52,6 +52,11 @@ public class WordServiceImpl implements WordService {
     }
 
     @Override
+    public List<Word> findByWordGrade(String wordGrade) {
+        return wordDao.findByWordGrade(wordGrade);
+    }
+
+    @Override
     public Page<Word> findByWordGrade(String wordGrade,Pageable pageable) {
 //        Page<Word> wordList = wordDao.findByWordGrade(wordGrade,pageable);
 //        return new PageImpl<Word>(wordList.getContent(),pageable,wordList.getTotalElements());

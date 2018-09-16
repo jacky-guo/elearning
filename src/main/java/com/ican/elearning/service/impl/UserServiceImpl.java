@@ -50,4 +50,9 @@ public class UserServiceImpl implements UserService {
         user.setLastloginTime(null);
         return userDao.save(user);
     }
+
+    @Override
+    public User findByUserId(String userId) {
+        return userDao.findByUserId(userId);
+    }
 }

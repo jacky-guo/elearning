@@ -12,4 +12,5 @@ public interface UserService {
     User register(User user);
     User findByUserAccountAndUserPassword(String userAccount,String userPassword);
     User findByUserAccount(String userAccount);
+    User findByUserId(String userId);
 }

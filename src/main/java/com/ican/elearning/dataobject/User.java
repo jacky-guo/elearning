@@ -31,6 +31,8 @@ public class User {
     private String userSchool;
     //使用者排名
     private String userRank;
+    //使用者興趣
+    private String interest;
     //使用者程度
     private Integer userLevel;
     //使用者身份

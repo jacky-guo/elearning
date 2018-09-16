@@ -1,7 +1,10 @@
 package com.ican.elearning.pipeline;
 
 import com.ican.elearning.dataobject.Paragraph;
+import com.ican.elearning.enums.ResultEnum;
 import com.ican.elearning.service.ParagraphService;
+import com.ican.elearning.utils.RestTemplate;
+import com.ican.elearning.utils.ResultVOUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import us.codecraft.webmagic.ResultItems;
@@ -29,6 +32,13 @@ public class ParagraphPipeline implements Pipeline{
             //檢查鏈接是否已存在
             List<Paragraph> paragraphList = paragraphService.findByParagraphSource(paragraphSource);
             if (paragraphList.isEmpty() || paragraphList == null) {
+                if (paragraph.getParagraphGrade() == null) {
+                    try {
+                        paragraph = RestTemplate.getParagraphLevel(paragraph);
+                    } catch (Exception e) {
+                        System.out.println(ResultVOUtil.error(ResultEnum.PYTHONSERVER_ERROR.getCode(),ResultEnum.PYTHONSERVER_ERROR.getMessage()));
+                    }
+                }
                 Paragraph paragraphResult = paragraphService.save(paragraph);
                 //自動產生題目
             }

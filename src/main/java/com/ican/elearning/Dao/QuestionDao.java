@@ -13,5 +13,8 @@ import java.util.List;
  */
 public interface QuestionDao extends JpaRepository<Question,Integer>{
     Page<Question> findByQuestionGrade(String questionGrade, Pageable pageable);
+    List<Question> findByQuestionLevelBetweenOrderByQuestionLevelDesc(Integer levelLower,Integer levelUpper);
+    List<Question> findByQuestionGrade(String questionGrade);
+    List<Question> findByQuestionLevelBetween(Integer levelLower,Integer levelUpper);
 
 }

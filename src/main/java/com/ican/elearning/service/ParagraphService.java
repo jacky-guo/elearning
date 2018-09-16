@@ -31,5 +31,6 @@ public interface ParagraphService {
     List<Paragraph> findByCreateTimeBetween(Date dateBefore, Date dateAfter);
     Page<Paragraph> findByParagraphLevelBetween(Integer down,Integer up, Pageable pageable);
     Page<Paragraph> findByParagraphHashtag(String paragraphHashtag,Pageable pageable);
+    List<Paragraph> findByParagraphGradeOrderByCreateTimeDesc(String paragraphGrade);
 
 }

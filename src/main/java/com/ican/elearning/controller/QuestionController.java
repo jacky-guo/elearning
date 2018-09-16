@@ -3,6 +3,7 @@ package com.ican.elearning.controller;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.ican.elearning.VO.ResultVO;
+import com.ican.elearning.converter.QuestionForm2QuestionDTOConverter;
 import com.ican.elearning.dataobject.Answer;
 import com.ican.elearning.dataobject.Question;
 import com.ican.elearning.dataobject.Word;
@@ -52,43 +53,17 @@ public class QuestionController {
     @Autowired
     private ParagraphService paragraphService;
 
+
+
     //新增題目
     @PostMapping("insert")
     public ResultVO<Question> insert(@Valid QuestionForm questionForm,
                                      BindingResult bindingResult) {
 
-        Question question = new Question();
-        question.setCreateBy(questionForm.getCreateBy());
-        question.setQuestionContent(questionForm.getQuestionContent());
-        question.setQuestionHashtag(questionForm.getQuestionHashtag());
-        question.setQuestionLevel(Integer.valueOf(questionForm.getQuestionGrade())*100);
-        question.setQuestionGrade(questionForm.getQuestionGrade());
-        question.setQuestionParagraphId(questionForm.getQuestionParagraphId());
-        question.setQuestionType(questionForm.getQuestionType());
+        QuestionDTO questionDTO = QuestionForm2QuestionDTOConverter.convert(questionForm);
+        questionDTO = questionService.insert(questionDTO);
 
-        Question questionResult = questionService.save(question);
-
-        Gson gson = new Gson();
-        List<AnswerDTO> answerDTOListList = new ArrayList<>();
-        try {
-            answerDTOListList = gson.fromJson(questionForm.getAns(),
-                    new TypeToken<List<AnswerDTO>>() {
-                    }.getType());
-        } catch (Exception e) {
-            log.error("【對象轉換】錯誤，string={}",questionForm.getAns());
-        }
-
-        for(int i=0;i<answerDTOListList.size();i++) {
-            Answer answer = new Answer();
-            answer.setQuestionId(questionResult.getQuestionId());
-            answer.setAnswerOrders(i);
-            answer.setCreateBy(questionResult.getCreateBy());
-            answer.setAnswerContent(gson.toJson(answerDTOListList.get(i)));
-            System.out.println(answer.getAnswerContent());
-            Answer ansResult = answerService.save(answer);
-        }
-
-        return ResultVOUtil.success();
+        return ResultVOUtil.success(questionDTO);
     }
 
     //自動產生題目
@@ -180,26 +155,28 @@ public class QuestionController {
 
     @GetMapping("/findOne")
     public ResultVO<QuestionDTO> findOne(@RequestParam("questionId") Integer questionId) {
-        Question question = questionService.findOne(questionId);
-        List<Answer> answerList = answerService.findByQuestionId(questionId);
-        Gson gson = new Gson();
-        List<AnswerDTO> answerDTOList = new ArrayList<>();
-        for (Answer answer:answerList) {
-            AnswerDTO answerDTO = new AnswerDTO();
-            try {
-                answerDTO = gson.fromJson(answer.getAnswerContent(),
-                        new TypeToken<AnswerDTO>() {
-                        }.getType());
-            } catch (Exception e) {
-                log.error("【對象轉換】錯誤，string={}",answer.getAnswerContent());
-            }
-            answerDTOList.add(answerDTO);
-        }
-        QuestionDTO questionDTO = new QuestionDTO();
-        BeanUtils.copyProperties(question,questionDTO);
-        questionDTO.setAnswerDTOList(answerDTOList);
+        QuestionDTO questionDTO = questionService.findByQuestionId(questionId);
         return ResultVOUtil.success(questionDTO);
     }
 
+    @DeleteMapping("/delete")
+    public ResultVO<QuestionDTO> delete(@RequestParam("questionId") Integer questionId) {
+        try {
+            questionService.delete(questionId);
+        } catch (Exception e) {
+            //如果有異常拋出錯誤訊息
+            log.error("【刪除题目】刪除內容不存在,questionId={},錯誤訊息={}",questionId,e.getMessage());
+            return ResultVOUtil.error(ResultEnum.NOT_EXIST_ERROR.getCode(),ResultEnum.NOT_EXIST_ERROR.getMessage());
+        }
+        return ResultVOUtil.success();
+    }
+
+    public QuestionDTO findByQuestion(Question question) {
+        QuestionDTO questionDTO = new QuestionDTO();
+        BeanUtils.copyProperties(question,questionDTO);
+        List<AnswerDTO> answerDTOList = answerService.findByQuestionId(question.getQuestionId());
+        questionDTO.setAnswerDTOList(answerDTOList);
+        return questionDTO;
+    }
 
 }

@@ -25,6 +25,7 @@ public interface WordService {
 
     //根據年級查詢單字
     List<Word> findByWordGradeIn(List<String> wordGradeList);
+    List<Word> findByWordGrade(String wordGrade);
     Page<Word> findByWordGrade(String wordGrade,Pageable pageable);
 
     //根據單字內容查詢單字

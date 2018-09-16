@@ -1,6 +1,7 @@
 package com.ican.elearning.utils;
 
 import com.ican.elearning.dataobject.Paragraph;
+import com.ican.elearning.dataobject.Word;
 import com.ican.elearning.dto.AnswerDTO;
 import com.ican.elearning.dto.QuestionDTO;
 import edu.stanford.nlp.ling.CoreAnnotations;
@@ -11,6 +12,8 @@ import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TreeCoreAnnotations;
 import edu.stanford.nlp.util.CoreMap;
+import org.python.google.common.collect.HashMultimap;
+import org.python.google.common.collect.Multimap;
 
 
 import java.util.*;
@@ -135,6 +138,152 @@ public class Lemmatizer {
 //        }
 //
 //    }
+    public static List<QuestionDTO> autoGenerator(List<Paragraph> paragraphList, List<Word> wordList, Integer paragraphNumber) {
+
+        List<QuestionDTO> questionDTOList = new ArrayList<>();
+
+        Map<String,String> dbWordMap = new LinkedHashMap<>();
+        for (Word word:wordList) {
+            dbWordMap.put(word.getWordContent(),word.getWordPartofspeech());
+        }
+
+        Pattern nounP = Pattern.compile("^NN");
+        Pattern verbP = Pattern.compile("^VB");
+        Pattern adjP = Pattern.compile("^JJ");
+        Pattern advP = Pattern.compile("RB|EX");
+        Pattern pronP = Pattern.compile("^WP|PP$|PR$|WDT");
+
+        for (int questionNumber = 0; questionNumber < paragraphNumber; questionNumber ++) {
+
+            //選教材
+            int selectNumber = (int)(Math.random()*(paragraphList.size() - questionNumber));
+            Paragraph paragraph = paragraphList.get(selectNumber);
+
+            //解析教材
+            Properties props = new Properties();
+            props.setProperty("annotators", "tokenize, ssplit, pos, lemma");
+            StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+            // create an empty Annotation just with the given text
+            Annotation document = new Annotation(paragraph.getParagraphContent());
+            // run all Annotators on this text
+            pipeline.annotate(document);
+            List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
+            List<AnswerDTO> answerDTOList = new ArrayList<>();
+
+            //挖空的序號
+            int index = 0;
+            String questionContent = "";
+            for (CoreMap sentence : sentences) {
+                // traversing the words in the current sentence
+                // a CoreLabel is a CoreMap with additional token-specific methods
+                //控制一個句子最多只挖一個空
+                boolean flag = false;
+                for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+                    String word = token.get(CoreAnnotations.TextAnnotation.class);
+                    String lemma = token.get(CoreAnnotations.LemmaAnnotation.class);
+                    String pos = token.get(CoreAnnotations.PartOfSpeechAnnotation.class);
+                    String correct = word;
+
+                    if (dbWordMap.keySet().contains(lemma)&&flag==false) {
+                        index ++;
+                        word = "_" + index + "_";
+                        //挖空序號
+                        flag = true;
+                        //避免考到重複的單字
+                        dbWordMap.remove(lemma);
+
+                        //錯誤答案集
+                        if (nounP.matcher(pos).find()) {
+                            pos = "noun";
+                        } else if (verbP.matcher(pos).find()) {
+                            pos = "verb";
+                        } else if (adjP.matcher(pos).find()) {
+                            pos = "adjective";
+                        } else if (advP.matcher(pos).find()) {
+                            pos = "adverb";
+                        } else if (pos.matches("CC")) {
+                            pos = "conjunction";
+                        } else if (pos.matches("IN|TO")) {
+                            pos = "preposition";
+                        } else if (pos.matches("DT|PDT")) {
+                            pos = "article";
+                        } else if (pos.matches("MD")) {
+                            pos = "auxiliary-verb";
+                        } else if (pronP.matcher(pos).find()) {
+                            pos = "pronoun";
+                        }
+
+                        Multimap<String, String> multiMap = HashMultimap.create();
+                        for (Map.Entry<String, String> entry : dbWordMap.entrySet()) {
+                            multiMap.put(entry.getValue(), entry.getKey());
+                        }
+                        Collection<String> samePosWord = multiMap.asMap().get(pos);
+                        List<String> wrongAnswer;
+                        if (samePosWord.size() > 3) {
+                            wrongAnswer = new ArrayList<>(samePosWord);
+                        }else {
+                            wrongAnswer = new ArrayList<>(dbWordMap.keySet());
+                        }
+
+                        AnswerDTO answerDTO = new AnswerDTO();
+                        answerDTO.setTitle(String.valueOf(index));
+                        answerDTO.setAnswerOrders(index);
+                        List<String> answerContent = new ArrayList<>();
+                        answerContent.add(correct);
+                        answerDTO.setCorrect(correct);
+                        int value1 =(int)(Math.random()*wrongAnswer.size());
+                        answerContent.add(wrongAnswer.get(value1));
+                        wrongAnswer.remove(value1);
+                        int value2 =(int)(Math.random()*wrongAnswer.size());
+                        answerContent.add(wrongAnswer.get(value2));
+                        wrongAnswer.remove(value2);
+                        int value3 =(int)(Math.random()*wrongAnswer.size());
+                        answerContent.add(wrongAnswer.get(value3));
+                        // shuffle option order
+                        Collections.shuffle(answerContent);
+                        answerDTO.setAnswerContent(answerContent);
+                        answerDTOList.add(answerDTO);
+
+                    }
+                    //處理拼接時空格問題
+                    if ((!pos.matches(".|,|:|#|$|-LRB-|-RRB-|''|``"))) {
+                        questionContent = questionContent + " " + word;
+                    }else {
+                        if (pos.matches("-LRB-"))
+                            word = "(";
+                        if (pos.matches("-RRB-"))
+                            word = ")";
+                        questionContent = questionContent + word;
+                    }
+                }
+            }
+            //考卷DTO初始化
+            QuestionDTO questionDTO = new QuestionDTO();
+            //考卷難易度定義
+            questionDTO.setQuestionLevel(Integer.valueOf(paragraph.getParagraphGrade()) * 100);
+            questionDTO.setQuestionType(2);
+            questionDTO.setQuestionAutoCreate(1);
+            questionDTO.setCreateBy("AutoGenerate");
+
+            questionDTO.setQuestionGrade(paragraph.getParagraphGrade());
+            questionDTO.setQuestionParagraphId(paragraph.getParagraphId());
+            questionDTO.setQuestionSource(paragraph.getParagraphSource());
+            questionDTO.setQuestionHashtag(paragraph.getParagraphHashtag());
+
+            questionDTO.setQuestionContent(questionContent);
+            questionDTO.setAnswerDTOList(answerDTOList);
+
+            paragraphList.remove(selectNumber);
+
+            if (index ==0 ) {
+                questionNumber --;
+            }else {
+                questionDTOList.add(questionDTO);
+            }
+        }
+
+        return questionDTOList;
+    }
 
     public static QuestionDTO someReplace(Paragraph paragraph,Map<String,String> dbWordMap) {
 
@@ -162,8 +311,8 @@ public class Lemmatizer {
         // run all Annotators on this text
         pipeline.annotate(document);
         List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
-
         List<AnswerDTO> answerDTOList = new ArrayList<>();
+
         //挖空的序號
         int index = 0;
         String questionContent = "";
@@ -176,29 +325,37 @@ public class Lemmatizer {
                 String word = token.get(CoreAnnotations.TextAnnotation.class);
                 String lemma = token.get(CoreAnnotations.LemmaAnnotation.class);
                 String pos = token.get(CoreAnnotations.PartOfSpeechAnnotation.class);
+                String correct = word;
 
                 if (dbWordMap.keySet().contains(lemma)&&flag==false) {
-                    word = "_" + (index + 1) + "_";
+                    index ++;
+                    word = "_" + index + "_";
                     //挖空序號
                     flag = true;
-                    index ++;
                     //避免考到重複的單字
                     dbWordMap.remove(lemma);
 
                     //錯誤答案集
-                    List<String> wrongAnswer = new ArrayList<>(dbWordMap.keySet());
+                    List<String> wrongAnswer = new ArrayList<>();
                     //TODO 目前使用方法為隨機給錯誤答案。
+
                     AnswerDTO answerDTO = new AnswerDTO();
                     answerDTO.setTitle(String.valueOf(index));
-                    answerDTO.setRightvalue(lemma);
+                    answerDTO.setAnswerOrders(index);
+                    List<String> answerContent = new ArrayList<>();
+                    answerContent.add(correct);
+                    answerDTO.setCorrect(correct);
                     int value1 =(int)(Math.random()*wrongAnswer.size());
-                    answerDTO.setWrongvalue1(wrongAnswer.get(value1));
+                    answerContent.add(wrongAnswer.get(value1));
                     wrongAnswer.remove(value1);
                     int value2 =(int)(Math.random()*wrongAnswer.size());
-                    answerDTO.setWrongvalue2(wrongAnswer.get(value2));
+                    answerContent.add(wrongAnswer.get(value2));
                     wrongAnswer.remove(value2);
                     int value3 =(int)(Math.random()*wrongAnswer.size());
-                    answerDTO.setWrongvalue3(wrongAnswer.get(value3));
+                    answerContent.add(wrongAnswer.get(value3));
+                    // shuffle option order
+                    Collections.shuffle(answerContent);
+                    answerDTO.setAnswerContent(answerContent);
                     answerDTOList.add(answerDTO);
                 }
                 //處理拼接時空格問題
@@ -211,7 +368,6 @@ public class Lemmatizer {
                         word = ")";
                     questionContent = questionContent + word;
                 }
-
             }
         }
         questionDTO.setQuestionContent(questionContent);
@@ -222,7 +378,6 @@ public class Lemmatizer {
             return questionDTO;
         }
     }
-
 
     public static void main(String[] args) {
 
@@ -283,3 +438,74 @@ public class Lemmatizer {
     }
 
 }
+/*
+articles
+-------------------------------
+DT	限定词 Determiners|Articles
+QT	量词 Quantifiers
+CD	基数
+WDT	Wh 限定词，例如 Which book do you like better 句子中的 which
+--------------------------------
+noun
+--------------------------------
+NN	名词（单数）
+NNS	名词（复数）
+NNP	专有名词（单数）
+NNPS	专有名词（复数）
+--------------------------------
+pronoun
+--------------------------------
+EX	表示存在性的 there，例如在 There was a party 句子中。
+PRP	人称代词 (PP)
+PRP$	物主代词 (PP$)
+WP	Wh 代词，例如用作关系代词的 which 和 that
+WP$	wh 物主代词，例如 whose
+--------------------------------
+adverb
+--------------------------------
+RBS	副词（最高级）
+RBR	副词（比较级）
+RB	副词
+WRB	Wh 副词，例如 I like it when you make dinner for me 句子中的 when
+--------------------------------
+adjective
+--------------------------------
+JJS	形容词（最高级）
+JJR	形容词（比较级）
+JJ	形容词
+--------------------------------
+auxiliary-verb
+--------------------------------
+MD	情态动词
+--------------------------------
+verb
+--------------------------------
+VB	动词（基本形式）
+VBP	动词（现在时态，非第三人称单数）
+VBZ	动词（现在时态，第三人称单数）
+VBD	动词（过去时态）
+VBN	动词（过去分词）
+VBG	动词（动名词或现在分词）
+--------------------------------
+preposition
+--------------------------------
+TO	介词 to
+IN	介词或从属连词
+--------------------------------
+conjunction
+--------------------------------
+CC	并列连词
+--------------------------------
+--------------------------------
+POS	所有格结束词
+UH	感叹词
+RP	小品词
+SYM	符号
+$	货币符号
+''	双引号或单引号
+(	左圆括号、左方括号、左尖括号或左花括号
+)	右圆括号、右方括号、右尖括号或右花括号
+,	逗号
+.	句末标点符号 (. ! ?)
+:	句中标点符号 (: ; ... -- -)
+ */

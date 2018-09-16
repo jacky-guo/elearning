@@ -10,6 +10,7 @@ import com.ican.elearning.form.ParagraphForm;
 import com.ican.elearning.service.ParagraphService;
 import com.ican.elearning.service.WordService;
 import com.ican.elearning.utils.Lemmatizer;
+import com.ican.elearning.utils.RestTemplate;
 import com.ican.elearning.utils.ResultVOUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,12 @@ public class ParagraphController {
     @Autowired
     private WordService wordService;
 
+    @GetMapping("/test")
+    public List<Paragraph> test(){
+        List<Paragraph> paragraphList = paragraphService.findByParagraphGradeOrderByCreateTimeDesc("3");
+        return paragraphList;
+    }
+
     //新增教材
     @PostMapping("/insert")
     public ResultVO<Paragraph> insert(@Valid ParagraphForm paragraphForm,
@@ -54,6 +61,13 @@ public class ParagraphController {
         }
 
         Paragraph paragraph = ParagraphForm2ParagraphConverter.convert(paragraphForm);
+        if (paragraph.getParagraphLevel() == null) {
+            try {
+                paragraph = RestTemplate.getParagraphLevel(paragraph);
+            } catch (Exception e) {
+                return ResultVOUtil.error(ResultEnum.PYTHONSERVER_ERROR.getCode(),ResultEnum.PYTHONSERVER_ERROR.getMessage());
+            }
+        }
         Paragraph insertResult = paragraphService.save(paragraph);
 
         //將句子切割 回傳原型和詞性
@@ -83,7 +97,7 @@ public class ParagraphController {
         }
         HashMap hashMap = new HashMap();
         hashMap.put("ParagraphId",insertResult.getParagraphId());
-        hashMap.put("data",wordList);
+        hashMap.put("wordList",wordList);
 
         return ResultVOUtil.success(hashMap);
     }

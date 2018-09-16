@@ -83,5 +83,8 @@ public class ParagraphServiceImpl implements ParagraphService {
         return paragraphDao.findByParagraphHashtag(paragraphHashtag,pageable);
     }
 
-
+    @Override
+    public List<Paragraph> findByParagraphGradeOrderByCreateTimeDesc(String paragraphGrade) {
+        return paragraphDao.findByParagraphGradeOrderByCreateTimeDesc(paragraphGrade);
+    }
 }

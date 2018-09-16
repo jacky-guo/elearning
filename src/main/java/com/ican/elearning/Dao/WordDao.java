@@ -14,6 +14,7 @@ import java.util.List;
 public interface WordDao extends JpaRepository<Word,Integer> {
     List<Word> findByWordLevelIn(List<Integer> wordLevelList);
     List<Word> findByWordGradeIn(List<String> wordGradeList);
+    List<Word> findByWordGrade(String wordGrade);
     Page<Word> findByWordGrade(String wordGrade, Pageable pageable);
     List<Word> findByWordContentIn(List<String> wordContentList);
     List<Word> findByWordContent(String wordContent);

@@ -9,6 +9,7 @@ import lombok.Getter;
 @Getter
 public enum ResultEnum {
 
+    SUCCESS(0,"成功"),
     PARAM_ERROR(40001,"參數不正確"),
     PARAM_EMPTY_ERROR(40002,"參數不完整"),
     PYTHONSERVER_ERROR(40003,"python服務器異常"),
